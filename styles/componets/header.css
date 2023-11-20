@@ -1,0 +1,103 @@
+.header {
+    background-color: none;
+    border-bottom: 1px solid rgba(133, 128, 121, 0.5);
+    height: 72px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1; /* 헤더를 다른 요소 위에 배치 */
+    box-sizing: border-box;
+    opacity: 0; /* 초기에는 투명으로 설정 */
+    animation: fadeInHeader 1s ease-in-out forwards; /* fadeInHeader 애니메이션 적용 */
+}
+
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header-logo img {
+    height: 74px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    margin-right: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.header-nav a:hover {
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 2px;
+}
+
+.header-nav__current {
+    border-bottom: 2px solid var(--header_il);
+    padding-bottom: 2px;
+}
+
+
+
+.header-bg {
+    background-color: var(var(--bg));
+    border-bottom: 1px solid rgba(133, 128, 121, 0.5);
+    height: 72px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1; /* 헤더를 다른 요소 위에 배치 */
+    box-sizing: border-box;
+}
+
+.header-bg-logo img {
+    height: 74px;
+}
+
+.header-bg-nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header-bg-nav li {
+    margin-right: 20px;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.header-bg-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--header_il);
+}
+
+.header-bg-nav a:hover {
+    border-bottom: 2px solid var(--header_il);
+    padding-bottom: 2px;
+}
