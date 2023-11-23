@@ -71,8 +71,7 @@
     width: 100vw;
     top: 0;
     z-index: 1; /* 헤더를 다른 요소 위에 배치 */
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 .header-bg-logo img {
     height: 74px;

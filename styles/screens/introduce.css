@@ -154,6 +154,10 @@
     display: flex;
 }
 
+.introduce-test-list-line{
+    margin-bottom: 72px;
+}
+
 .introduce-introduce-bar-tex__btn div{
     width: 36px;
     height: 36px;
@@ -266,7 +270,7 @@
     padding-top: 16px;
     color: #636C53;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px; /* 100% */
     letter-spacing: -0.96px;
 }
