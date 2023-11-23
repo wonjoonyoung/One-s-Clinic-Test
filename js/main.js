@@ -87,10 +87,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetY600 = 600; // 두 번째 요소의 원하는 Y값 설정
 
     const functionalIntroduce = document.querySelector('.functional-introduce');
-    const targetY580 = 580; 
+    const targetY580 = 590; 
 
     const functionalIntroduceList = document.querySelector('.functional-introduce-list');
     const targetY560 = 560; 
+
+    const totalcareIntroduce = document.querySelector('.totalcare-introduce');
+    const targetY520 = 520; 
+
+    const totalcareIntroduceList = document.querySelector('.totalcare-introduce-list');
+    const totalcareIntroduceListBtn = document.querySelector('.totalcare-introduce-list-btn');
+    const targetY500 = 510; 
+
 
     function fadeInElement(element, targetY) {
         const elementTop = element.getBoundingClientRect().top;
@@ -106,13 +114,23 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeInElement(mainIntroduceGraphic, targetY600);
         fadeInElement(functionalIntroduce, targetY580);
         fadeInElement(functionalIntroduceList, targetY560);
+        fadeInElement(totalcareIntroduce, targetY520);
+        fadeInElement(totalcareIntroduceList, targetY500);
+        fadeInElement(totalcareIntroduceListBtn, targetY500);
+
+
+
 
         // 모든 페이드인이 완료되었을 때 스크롤 이벤트 제거
         if (
             mainIntroduce.classList.contains('visible') &&
             mainIntroduceGraphic.classList.contains('visible') &&
             functionalIntroduce.classList.contains('visible') &&
-            functionalIntroduceList.classList.contains('visible')
+            functionalIntroduceList.classList.contains('visible') &&
+            totalcareIntroduce.classList.contains('visible') &&
+            totalcareIntroduceList.classList.contains('visible') &&
+            totalcareIntroduceListBtn.classList.contains('visible')
+
         ) {
             window.removeEventListener('scroll', handleScroll);
         }

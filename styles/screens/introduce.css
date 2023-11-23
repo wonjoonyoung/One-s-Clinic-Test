@@ -12,8 +12,16 @@
 
 .introduce-introduce{
     margin: 0 10vw;
-    margin-bottom: 72px;
+    margin-top: 160px;
 }
+
+.introduce-introduce-list{
+    margin: 0 12vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
 
 .introduce-introduce-bar{
     width: 100vw;
@@ -163,6 +171,9 @@
     height: 36px;
     border-radius: 50px;
     border: 2px solid #7F896C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .introduce-introduce-bar-tex__btn div:first-child{
@@ -199,14 +210,14 @@
 .introduce-carepart-content-warp{
     display: flex;
     flex-direction: column;
-    padding: 2vw;
+    padding-left: 2vw;
     justify-content: space-between;
 }
 
 
 .introduce-carepart-content-img{
     width: 30vw;
-    height: 40vw;
+    height: 46vw;
     background-color: #636C53;
 }
 
@@ -215,7 +226,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 150%; /* 36px */
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 
 .introduce-carepart-content__discription{
@@ -231,7 +242,7 @@
 }
 
 .introduce-test{
-    padding: 160px 10vw;
+    padding: 0 10vw;
 }
 
 .introduce-test-text{

@@ -32,3 +32,14 @@
     border-radius: 12px;
     color: var(----pri700);
 }
+
+#btn-large-white:hover{
+    border: none;
+    padding: 16px 36px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    border-radius: 12px;
+    background-color: var(--gs600);
+    color: white;
+}

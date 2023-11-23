@@ -53,9 +53,9 @@
 }
 
 .main-hero-text h2 {
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 100%; /* 46px */
+    line-height: 110%; /* 46px */
     letter-spacing: -1.84px;
     padding-left: 2px;
     margin-bottom: 16px;
@@ -250,7 +250,7 @@
     align-items: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    /* opacity: 0; 초기에 숨겨진 상태로 설정 */
+    opacity: 0; 
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
@@ -259,7 +259,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
-    /* opacity: 0; 초기에 숨겨진 상태로 설정 */
+    opacity: 0; 
     transition: opacity 0.8s ease-in-out; 
 }
 
@@ -307,46 +307,53 @@
 .totalcare-introduce{
     text-align: center;
     margin-bottom: 48px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .totalcare-introduce-list{
     display: flex;
-    justify-content: space-between;
-    margin: 0 160px;
-    margin-bottom: 48px
+    justify-content: center;
+    margin: 0 12vw;
+    margin-bottom: 48px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
 .totalcare-introduce-list-warp{
     display: flex;
-    padding: 3vw 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
     border: 1px solid var(--border);
-    margin-right: 2.4vw;
-    width: 20%;
+    margin-right: 36px;
+    width: 180px;
+    height: 180px;
 }
 
 .totalcare-introduce-list__icon{
     width: 34px;
     height: 34px;
-    background-color: antiquewhite;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .totalcare-introduce-list-warp span{
     color: var(--pri500);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 24px; /* 120% */
+    line-height: 28px; /* 120% */
     letter-spacing: -0.8px;
+    text-align: center;
 }
 
 .totalcare-introduce-list-btn{
     display: flex;
     justify-content: center;
     margin-bottom: 160px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
 }
 
 
@@ -361,7 +368,7 @@
 }
 
 .media-introduce-text-wrap{
-    margin: 0 10vw;
+    margin: 0 12vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -463,12 +470,12 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 12px;
+    padding: 16px 24px;
     box-sizing: border-box;
     background: #fff;
     border-radius: 0 0 16px 16px;
-    color: #28221C;
-    font-size: 14px;
+    color: var(--p);
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 21px */
@@ -479,13 +486,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 160px;
+    margin: 0 12vw;
     margin-bottom: 48px;
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
 .hospital-introduce-list{
-    margin: 0 10vw;
+    margin: 0 12vw;
     display: flex;
     justify-content: center;
     margin-bottom: 160px;
@@ -501,11 +508,12 @@
 }
 
 .hospital-introduce-list__info__img{
-    background: #28221C;
     height: 24vw;
     border-radius: 12px;
     position: relative;
     margin-bottom: 24px;
+    background-image: url("../../img/png/main/mokdong.png");
+    background-size: cover;
 }
 
 .hospital-introduce-list__info__img__icon{
@@ -514,8 +522,16 @@
     right: 24px;
     width: 48px;
     height: 48px;
-    border: 1px solid #fff;
-    border-radius: 24px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hospital-introduce-list__info__img__icon img{
+    width: 36px;
+    height: 36px;
 }
 
 .hospital-introduce-list__info__text{
@@ -524,7 +540,7 @@
 }
 
 .hospital-introduce-list__info__text h3{
-    color: var(--gs-15, #262626);
+    color: var(--pri500);
     font-size: 24px;
     font-weight: 700;
     line-height: 24px; /* 85.714% */
@@ -533,15 +549,18 @@
 }
 
 .hospital-introduce-list__info__text__info{
-    color: var(--dpri-15, #1A3129);
+    color: var(--gs);
     font-size: 20px;
     font-weight: 500;
     line-height: 150%; /* 30px */
+    display: flex;
+    align-items: center;
 }
 
 .hospital-introduce-list__info__text__info span {
     width: 24px;
     height: 24px;
+    margin-right: 8px;
     display: inline-block;
 }
 
@@ -549,12 +568,11 @@
     width: 64px;
     height: 64px;
     display: inline-block;
-    background-color: #262626;
     margin-right: 16px;
 }
 
 .reservation-info{
-    padding: 120px 10vw;
+    padding: 120px 12vw;
     display: flex;
     justify-content: space-between;
     background-color: #FFFDF6;

@@ -26,6 +26,15 @@
     margin-bottom: 160px;
 }
 
+.about-intro-title span{
+    display: block;
+    color: #7F896C;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+}
+
 .about-intro-title{
     color: #7F896C;
     font-size: 48px;
@@ -77,14 +86,14 @@
 }
 
 .about-introduce-graphic h3 {
-    color: #7F896C;
+    color: var(--pri600);
     font-size: 28px;
     font-weight: 400;
     margin-bottom: 16px;
 }
 
 .about-introduce-graphic h2 {
-    color: #7F896C;
+    color: var(--pri600);
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 48px;
@@ -112,14 +121,14 @@
 }
 
 .about-introduce-graphic-wrap__info__text h3{
-    color: var(--pri400);
+    color: var(--pri500);
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .about-introduce-graphic-wrap__info__text p{
-    color: var(--gs);
+    color: var(--pri700);
     font-size: 20px;
     font-weight: 500;
     line-height: 150%; /* 30px */
@@ -127,8 +136,8 @@
 }
 
 .about-solution{
-    margin: 0 10vw;
-    margin-bottom: 60px;
+    margin: 0 12vw;
+    margin-bottom: 24px;
 }
 
 .about-solution-graphic{
@@ -136,7 +145,7 @@
 }
 
 .about-solution-graphic-warp{
-    padding: 4vw 10vw;
+    padding: 4vw 12vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -169,7 +178,7 @@
 
 .about-solution-graphic__btn{
     border-radius: 6px;
-    border: 1px solid #7F896C;
+    border: none;
     background: #E9EAE8;
     color: var(--pri700);
     font-size: 14px;
@@ -179,7 +188,7 @@
 }
 
 .about-solution-graphic-right-warp{
-    padding: 4vw 10vw;
+    padding: 4vw 16vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,22 +207,13 @@
     color: #636C53;
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 16px;
-}
-
-.about-solution-graphic-right__text p{
-    color: var(--gs-40, #656567);
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 160%; /* 32px */
-    letter-spacing: -0.8px;
-    margin-bottom: 36px;
+    line-height: 120%;
+    margin-bottom: 28px;
 }
 
 .about-solution-graphic-right__btn{
     border-radius: 6px;
-    border: 1px solid #7F896C;
-    background: #E9EAE8;
+    border: none;
     color: var(--pri700);
     font-size: 14px;
     font-weight: 600;
