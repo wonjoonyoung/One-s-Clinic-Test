@@ -13,6 +13,8 @@
 /* Screens */
 @import "screens/main.css";
 @import "screens/about.css";
+@import "screens/introduce.css";
+@import "screens/totalcare.css";
 /* @import "screens/temporary.css";
 @import "screens/survry.css";
 @import "screens/text.css";

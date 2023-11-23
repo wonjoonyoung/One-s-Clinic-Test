@@ -60,7 +60,7 @@
 
 
 .header-bg {
-    background-color: var(var(--bg));
+    background-color: var(--bg);
     border-bottom: 1px solid rgba(133, 128, 121, 0.5);
     height: 72px;
     padding: 0 80px;

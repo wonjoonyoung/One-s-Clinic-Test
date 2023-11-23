@@ -62,7 +62,6 @@
 }
 
 .main-hero-text h1 {
-    font-family: SUIT;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
@@ -251,7 +250,7 @@
     align-items: center;
     margin: 0 160px;
     margin-bottom: 48px;
-    opacity: 0; /* 초기에 숨겨진 상태로 설정 */
+    /* opacity: 0; 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
@@ -260,7 +259,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
-    opacity: 0; /* 초기에 숨겨진 상태로 설정 */
+    /* opacity: 0; 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; 
 }
 

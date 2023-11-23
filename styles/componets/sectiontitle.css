@@ -14,6 +14,14 @@
     margin-bottom: 16px;
 }
 
+.sectiontitle-left h2 span{
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 100%;
+    color: var(--pri600);
+    margin-bottom: 20px;
+}
+
 .sectiontitle-left p{
     color: var(--gs);
     font-size: 22px;
@@ -49,6 +57,7 @@
     line-height: 48px; /* 120.833% */
     letter-spacing: -1.92px;
     margin-bottom: 16px;
+    line-height: 120%;
 }
 
 .sectiontitle-bg-brown p{
