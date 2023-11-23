@@ -191,7 +191,7 @@
 }
 
 .main-introduce-graphic{
-    margin-top: 72px;
+    margin-top: 86px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -229,14 +229,14 @@
 }
 
 .main-introduce-graphic-wrap__info__text h3{
-    color: var(--pri400);
+    color: var(--pri500);
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .main-introduce-graphic-wrap__info__text p{
-    color: var(--gs);
+    color: var(--gs700);
     font-size: 20px;
     font-weight: 500;
     line-height: 150%; /* 30px */
@@ -248,14 +248,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 160px;
+    margin: 0 12vw;
     margin-bottom: 48px;
     /* opacity: 0; 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
 .functional-introduce-list{
-    margin: 0 160px;
+    margin: 0 12vw;
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
@@ -284,6 +284,9 @@
     width: 56px;
     height: 56px;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .functional-introduce-list-warp__title{
@@ -375,7 +378,7 @@
 .functional-introduce-btn{
     display: flex;
     justify-content: center;
-    margin-bottom: 48px;
+    text-decoration: none;
 }
 
 
