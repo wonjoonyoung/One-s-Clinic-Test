@@ -66,7 +66,33 @@ setInterval(() => {
     nextBtn.click();
   }, 6000);
 
-                           
+             
+  
+const container2 = document.querySelector(".about-space-content__tab2__items");
+const prevBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_up");
+const nextBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_down"); 
+
+(function addEvent2(){
+  prevBtn2.addEventListener('click', translateContainer2.bind(this, 1));
+  nextBtn2.addEventListener('click', translateContainer2.bind(this, -1));
+})();
+
+function translateContainer2(direction2){
+  const selectedBtn2 = (direction2 === 1) ? 'prev2' : 'next2';
+  container2.style.transitionDuration = '500ms';
+  container2.style.transform = `translateX(${direction2 * (100 / 5)}%)`;
+  container2.ontransitionend = () => reorganizeEl2(selectedBtn2);
+}
+
+function reorganizeEl2(selectedBtn2) {
+  container2.removeAttribute('style');
+  (selectedBtn2 === 'prev2') ? container2.insertBefore(container2.lastElementChild, container2.firstElementChild): container2.appendChild(container2.firstElementChild);
+}
+
+setInterval(() => {
+    nextBtn2.click();
+  }, 6000);
+
 
 
 

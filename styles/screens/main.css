@@ -542,7 +542,7 @@
 .hospital-introduce-list__info__text h3{
     color: var(--pri500);
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 24px; /* 85.714% */
     letter-spacing: -1.12px;
     margin-bottom: 16px;

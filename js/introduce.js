@@ -1,12 +1,11 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // 기본으로 선택되는 탭 설정
     const defaultTabId = 'introduce-introduce-bar-contents__tab1';
     showContent(defaultTabId);
-
-
-
-
-
 
     const rightBtn = document.querySelector('.introduce-introduce-bar-tex__btn__right');
     rightBtn.addEventListener('click', function() {
@@ -64,10 +63,10 @@ function showContent(tabId) {
 
 
     // 모달 트리거 요소
-    const modalTrigger = document.getElementById('modalTrigger');
+    const modalTrigger = document.getElementById('modalTrigger1');
 
     // 모달 요소
-    const modal = document.getElementById('myModal');
+    const modal = document.getElementById('myModal1');
 
     // 모달을 닫는 요소 (X 버튼)
     const closeBtn = document.getElementById('closeBtn');
