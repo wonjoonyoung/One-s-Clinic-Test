@@ -639,6 +639,10 @@
     margin-top: 20px;
   }
 
+  .about-space-content.remove {
+    display: none;
+  }
+
   .about-space-content.active {
     display: block;
   }

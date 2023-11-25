@@ -115,7 +115,6 @@
 
 .totalcare-aging-clinic-program{
     margin: 0 10vw;
-    margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,6 +141,7 @@
     font-weight: 400;
     line-height: 160%; /* 36px */
     letter-spacing: -0.96px;
+    margin-bottom: 16px;
 }
 
 .totalcare-aging-clinic-program_grade{
@@ -162,6 +162,7 @@
 
 .totalcare-aging-clinic-program_grade_contents{
     margin: 0 10vw;
+    display: none;
 }
 
 .totalcare-aging-clinic-program_grade_contents-linefrist{
@@ -173,7 +174,11 @@
 
 .totalcare-aging-clinic-program_grade_content{
     width: 32%;
-    height: 16vw;
+    height: 20vw;
+    background-color: #FFFDF6;
+    border-radius: 12px;
+    padding: 24px 24px;
+    box-sizing: border-box;
 }
 
 .totalcare-aging-clinic-program_grade_content span{
@@ -186,7 +191,7 @@
 
 .totalcare-aging-clinic-program_grade_content h3{
     color: #636C53;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 140%;
     margin-bottom: 16px;
@@ -195,9 +200,29 @@
 
 .totalcare-aging-clinic-program_grade_content ul{
     color: var(--gs-40, #656567);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 160%; /* 32px */
     letter-spacing: -0.8px;
     margin-bottom: 36px;
+}
+
+.totalcare-aging-clinic-program_grade_contents.active {
+    display: block;
+  }
+
+  .grade.active {
+    border-bottom: 2px solid #392613; /* 선택된 탭의 아래쪽에 2px 빨간색 선 추가 */
+}
+
+.totalcare-aging_contents.remove{
+    display: none;
+}
+
+.totalcare-aging_contents.active {
+    display: block;
+  }
+
+  .introduce-introduce-list-warp.active {
+    border-bottom: 2px solid #392613; /* 선택된 탭의 아래쪽에 2px 빨간색 선 추가 */
 }
