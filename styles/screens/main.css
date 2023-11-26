@@ -161,6 +161,7 @@
     align-items: center;
     opacity: 0; /* 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
+    margin-bottom: 160px;
 }
 
 .main-introduce h2{
@@ -250,7 +251,7 @@
     align-items: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    opacity: 0; 
+    /* opacity: 0;  */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
@@ -259,7 +260,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
-    opacity: 0; 
+    /* opacity: 0;  */
     transition: opacity 0.8s ease-in-out; 
 }
 
@@ -307,7 +308,7 @@
 .totalcare-introduce{
     text-align: center;
     margin-bottom: 48px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.8s ease-in-out;
 }
 
@@ -316,7 +317,7 @@
     justify-content: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.8s ease-in-out;
 }
 
@@ -352,7 +353,7 @@
     justify-content: center;
     margin-bottom: 160px;
     text-decoration: none;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.8s ease-in-out;
 }
 
