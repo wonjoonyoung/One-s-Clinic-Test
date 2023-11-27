@@ -70,6 +70,9 @@ tabContentBasic.forEach(tab => {
     tab.addEventListener('click', basic);
 });
 
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // 기본으로 선택되는 탭 설정
 

@@ -101,6 +101,11 @@
     margin-top: 12px;
 }
 
+.totalcare-aging-clinic-content p span{
+    font-weight: 700;
+    line-height: 200%;
+}
+
 .totalcare-aging-clinic-content h4{
     color: #636C53;
     font-size: 20px;
