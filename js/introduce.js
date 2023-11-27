@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const defaultTabId = 'introduce-introduce-bar-contents__tab1';
     showContent(defaultTabId);
 
-    const rightBtn = document.querySelector('.introduce-introduce-bar-tex__btn__right');
+    const rightBtn = document.querySelector('.introduce-introduce-bar-tex__btn__right1');
     rightBtn.addEventListener('click', function() {
         const tabId = 'introduce-introduce-bar-contents__tab2';
         showContent(tabId);
@@ -19,10 +19,219 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // .step2에 active 클래스 추가
         document.querySelector('.step2').classList.add('active');
-    });
+    }
+    );
+
+
+    
+    const lefttBtn = document.querySelector('.introduce-introduce-bar-tex__btn__left1');
+    
+    lefttBtn.addEventListener('click', function() {
+        const tabIdLeft = 'introduce-introduce-bar-contents__tab6';
+        showContent(tabIdLeft);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step6').classList.add('active');
+    }
+    
+    );
+
+
+    ////////
+
+    const rightBtn2 = document.querySelector('.introduce-introduce-bar-tex__btn__right2');
+    rightBtn2.addEventListener('click', function() {
+        const tabId2 = 'introduce-introduce-bar-contents__tab3';
+        showContent(tabId2);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step3').classList.add('active');
+    }
+    );
+
+
+    
+    const lefttBtn2 = document.querySelector('.introduce-introduce-bar-tex__btn__left2');
+    
+    lefttBtn2.addEventListener('click', function() {
+        const tabIdLeft2 = 'introduce-introduce-bar-contents__tab1';
+        showContent(tabIdLeft2);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step1').classList.add('active');
+    }
+    
+    );
+
+    ///////
+
+    const rightBtn3 = document.querySelector('.introduce-introduce-bar-tex__btn__right3');
+    rightBtn3.addEventListener('click', function() {
+        const tabId3 = 'introduce-introduce-bar-contents__tab4';
+        showContent(tabId3);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step4').classList.add('active');
+    }
+    );
+
+
+    
+    const lefttBtn3 = document.querySelector('.introduce-introduce-bar-tex__btn__left3');
+    
+    lefttBtn3.addEventListener('click', function() {
+        const tabIdLeft3 = 'introduce-introduce-bar-contents__tab2';
+        showContent(tabIdLeft3);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step2').classList.add('active');
+    }
+    
+    );
+
+    //////
+
+    const rightBtn4 = document.querySelector('.introduce-introduce-bar-tex__btn__right4');
+    rightBtn4.addEventListener('click', function() {
+        const tabId4 = 'introduce-introduce-bar-contents__tab5';
+        showContent(tabId4);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step5').classList.add('active');
+    }
+    );
+
+
+    
+    const lefttBtn4 = document.querySelector('.introduce-introduce-bar-tex__btn__left4');
+    
+    lefttBtn4.addEventListener('click', function() {
+        const tabIdLeft4 = 'introduce-introduce-bar-contents__tab3';
+        showContent(tabIdLeft4);
+
+        // 선택된 탭에 border 추가
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        // .step2에 active 클래스 추가
+        document.querySelector('.step3').classList.add('active');
+    }
+    
+    );
+
+
+        //////
+
+        const rightBtn5 = document.querySelector('.introduce-introduce-bar-tex__btn__right5');
+        rightBtn5.addEventListener('click', function() {
+            const tabId5 = 'introduce-introduce-bar-contents__tab6';
+            showContent(tabId5);
+    
+            // 선택된 탭에 border 추가
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+    
+            // .step2에 active 클래스 추가
+            document.querySelector('.step6').classList.add('active');
+        }
+        );
+    
+    
+        
+        const lefttBtn5 = document.querySelector('.introduce-introduce-bar-tex__btn__left5');
+        
+        lefttBtn5.addEventListener('click', function() {
+            const tabIdLeft5 = 'introduce-introduce-bar-contents__tab4';
+            showContent(tabIdLeft5);
+    
+            // 선택된 탭에 border 추가
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+    
+            // .step2에 active 클래스 추가
+            document.querySelector('.step4').classList.add('active');
+        }
+        
+        );
 
 
 
+        //////
+
+        const rightBtn6 = document.querySelector('.introduce-introduce-bar-tex__btn__right6');
+        rightBtn6.addEventListener('click', function() {
+            const tabId6 = 'introduce-introduce-bar-contents__tab1';
+            showContent(tabId6);
+    
+            // 선택된 탭에 border 추가
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+    
+            // .step2에 active 클래스 추가
+            document.querySelector('.step1').classList.add('active');
+        }
+        );
+    
+    
+        
+        const lefttBtn6 = document.querySelector('.introduce-introduce-bar-tex__btn__left6');
+        
+        lefttBtn6.addEventListener('click', function() {
+            const tabIdLeft6 = 'introduce-introduce-bar-contents__tab5';
+            showContent(tabIdLeft6);
+    
+            // 선택된 탭에 border 추가
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+    
+            // .step2에 active 클래스 추가
+            document.querySelector('.step5').classList.add('active');
+        }
+        
+        );
+    
+
+
+
+
+
+
+    // 여기 버튼 컨트롤 영역
 
 
 

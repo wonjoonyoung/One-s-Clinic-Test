@@ -54,6 +54,10 @@ function showTotalContent(TotaltabId) {
     }
 }
 
+
+
+
+
 const tabContentBasic = document.querySelectorAll('.totalcare-introduce-list-warp');
 
 function basic(event) {
@@ -64,7 +68,10 @@ function basic(event) {
 
     // 클릭된 요소에 'active' 클래스 추가
     event.target.classList.add('active');
+
 }
+
+
 
 tabContentBasic.forEach(tab => {
     tab.addEventListener('click', basic);
@@ -124,14 +131,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 각 탭을 클릭할 때의 동작
     const tabs2 = document.querySelectorAll('.grade');
-    tabs2.forEach(tab2 => {
-        tab2.addEventListener('click', function () {
+    tabs2.forEach(tab => {
+        tab.addEventListener('click', function () {
             const tabId2 = this.getAttribute('onclick').match(/'(.*?)'/)[1];
             showContent2(tabId2);
 
             // 선택된 탭에 border 추가
-            tabs2.forEach(tab2 => {
-                tab2.classList.remove('active');
+            tabs2.forEach(tab => {
+                tab.classList.remove('active');
             });
             this.classList.add('active');
         });
@@ -148,7 +155,7 @@ function showContent2(tabId2) {
     // 모든 탭 내용 감추기
     const tabContents2 = document.querySelectorAll('.totalcare-diet-clinic-program_grade_contents');
     tabContents2.forEach(content2 => content2.classList.remove('active'));
-    
+
     // 선택한 탭에 해당하는 내용 표시
     const selectedTabContent2 = document.getElementById(tabId2);
     if (selectedTabContent2) {
@@ -158,36 +165,145 @@ function showContent2(tabId2) {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    // 기본으로 선택되는 탭 설정
+    const defaultTabId3 = 'totalcare-Immune-clinic-program_grade-tab1';
+    showContent3(defaultTabId3);
+
+    // 각 탭을 클릭할 때의 동작
+    const tabs3 = document.querySelectorAll('.grade');
+    tabs3.forEach(tab => {
+        tab.addEventListener('click', function () {
+            const tabId3 = this.getAttribute('onclick').match(/'(.*?)'/)[1];
+            showContent3(tabId3);
+
+            // 선택된 탭에 border 추가
+            tabs3.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+
+    // 페이지 로드 시에 기본 탭에 해당하는 버튼에 active 클래스 추가
+    const defaultTabButton3 = document.querySelector(`.grade[onclick="showContent3('${defaultTabId3}')"]`);
+    if (defaultTabButton3) {
+        defaultTabButton3.classList.add('active');
+    }
+});
+
+function showContent3(tabId3) {
+    // 모든 탭 내용 감추기
+    const tabContents3 = document.querySelectorAll('.totalcare-Immune-clinic-program_grade_contents');
+    tabContents3.forEach(content3 => content3.classList.remove('active'));
+
+    // 선택한 탭에 해당하는 내용 표시
+    const selectedTabContent3 = document.getElementById(tabId3);
+    if (selectedTabContent3) {
+        selectedTabContent3.classList.add('active');
+    }
+}
+
 
 
 
 
 const topMenu = document.getElementById("top-menu");
-const middleMenu = document.getElementById("middle-menu");
-const middleMenuTop = middleMenu.offsetTop;
-const middleMenuHeight = middleMenu.offsetHeight;
+const middleMenus = document.querySelectorAll(".middle-menu");
+
+// 첫 번째 middleMenu만 선택
+const middleMenu = middleMenus[0];
+
+if (middleMenu) {
+    const middleMenuTop = middleMenu.offsetTop;
+    const middleMenuHeight = middleMenu.offsetHeight;
+
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener("scroll", function() {
+        const scrollPosition = window.scrollY;
+
+        // 스크롤 위치가 요소의 초기 위치 이상이면 "fixed" 클래스 추가
+        if (scrollPosition >= middleMenuTop) {
+            middleMenu.classList.add("fixed");
+            topMenu.classList.add("fixed");
+
+            // middleMenu 높이만큼 다음 컨텐츠를 내림
+            document.body.style.paddingTop = `${middleMenuHeight}px`;
+
+        } else {
+            // 스크롤 위치가 요소의 초기 위치 미만이면 "fixed" 클래스 제거
+            middleMenu.classList.remove("fixed");
+            topMenu.classList.remove("fixed");
+
+            document.body.style.paddingTop = "0";
+        }
+    });
+} else {
+    console.error('No middle-menu element found.');
+}
 
 
+/////////////
+// 첫 번째 middleMenu만 선택
+const middleMenu2 = middleMenus[1];
 
-// 스크롤 이벤트 리스너 등록
-window.addEventListener("scroll", function() {
-    const scrollPosition = window.scrollY;
+if (middleMenu) {
+    const middleMenuTop2 = middleMenu.offsetTop;
+    const middleMenuHeight2 = middleMenu.offsetHeight;
 
-    // 스크롤 위치가 요소의 초기 위치 이상이면 "fixed" 클래스 추가
-    if (scrollPosition >= middleMenuTop) {
-        middleMenu.classList.add("fixed");
-        topMenu.classList.add("fixed");
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener("scroll", function() {
+        const scrollPosition2 = window.scrollY;
+
+        // 스크롤 위치가 요소의 초기 위치 이상이면 "fixed" 클래스 추가
+        if (scrollPosition2 >= middleMenuTop2) {
+            middleMenu2.classList.add("fixed");
+            topMenu2.classList.add("fixed");
+
+            // middleMenu 높이만큼 다음 컨텐츠를 내림
+            document.body.style.paddingTop = `${middleMenuHeight2}px`;
+
+        } else {
+            // 스크롤 위치가 요소의 초기 위치 미만이면 "fixed" 클래스 제거
+            middleMenu2.classList.remove("fixed");
+            topMenu2.classList.remove("fixed");
+
+            document.body.style.paddingTop = "0";
+        }
+    });
+} else {
+    console.error('No middle-menu element found.');
+}
 
 
-        // middleMenu 높이만큼 다음 컨텐츠를 내림
-        document.body.style.paddingTop = "150px";
+const middleMenu3 = middleMenus[2];
 
-    } else {
-        // 스크롤 위치가 요소의 초기 위치 미만이면 "fixed" 클래스 제거
-        middleMenu.classList.remove("fixed");
-        topMenu.classList.remove("fixed");
+if (middleMenu) {
+    const middleMenuTop3 = middleMenu.offsetTop;
+    const middleMenuHeight3 = middleMenu.offsetHeight;
 
-        document.body.style.paddingTop = "0";
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener("scroll", function() {
+        const scrollPosition3 = window.scrollY;
 
-    }
-});
+        // 스크롤 위치가 요소의 초기 위치 이상이면 "fixed" 클래스 추가
+        if (scrollPosition3 >= middleMenuTop3) {
+            middleMenu3.classList.add("fixed");
+            topMenu.classList.add("fixed");
+
+            // middleMenu 높이만큼 다음 컨텐츠를 내림
+            document.body.style.paddingTop = `${middleMenuHeight3}px`;
+
+        } else {
+            // 스크롤 위치가 요소의 초기 위치 미만이면 "fixed" 클래스 제거
+            middleMenu3.classList.remove("fixed");
+            topMenu.classList.remove("fixed");
+
+            document.body.style.paddingTop = "0";
+        }
+    });
+} else {
+    console.error('No middle-menu element found.');
+}
+
+
