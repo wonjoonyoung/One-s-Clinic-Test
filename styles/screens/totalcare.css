@@ -217,6 +217,7 @@
 
 .totalcare-diet-clinic-program_grade_contents {
     display: none;
+    margin: 0 12vw;
 }
 
 .totalcare-diet-clinic-program_grade_contents.active {
