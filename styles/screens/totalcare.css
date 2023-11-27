@@ -1,6 +1,5 @@
 
-
-.totalcare-list{
+.introduce-introduce-list{
     display: flex;
     justify-content: center;
     margin: 0 160px;
@@ -211,7 +210,19 @@
     display: block;
   }
 
+.totalcare-diet-clinic-program_grade_contents {
+    display: none;
+}
+
+.totalcare-diet-clinic-program_grade_contents.active {
+    display: block;
+  }
+
   .grade.active {
+    border-bottom: 2px solid #392613; /* 선택된 탭의 아래쪽에 2px 빨간색 선 추가 */
+}
+
+.basic.active {
     border-bottom: 2px solid #392613; /* 선택된 탭의 아래쪽에 2px 빨간색 선 추가 */
 }
 
