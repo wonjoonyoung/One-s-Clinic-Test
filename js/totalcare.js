@@ -307,3 +307,35 @@ if (middleMenu) {
 }
 
 
+
+const middleMenu4 = middleMenus[3];
+
+if (middleMenu) {
+    const middleMenuTop4 = middleMenu.offsetTop;
+    const middleMenuHeight4 = middleMenu.offsetHeight;
+
+    // 스크롤 이벤트 리스너 등록
+    window.addEventListener("scroll", function() {
+        const scrollPosition4 = window.scrollY;
+
+        // 스크롤 위치가 요소의 초기 위치 이상이면 "fixed" 클래스 추가
+        if (scrollPosition4 >= middleMenuTop4) {
+            middleMenu4.classList.add("fixed");
+            topMenu.classList.add("fixed");
+
+            // middleMenu 높이만큼 다음 컨텐츠를 내림
+            document.body.style.paddingTop = `${middleMenuHeight4}px`;
+
+        } else {
+            // 스크롤 위치가 요소의 초기 위치 미만이면 "fixed" 클래스 제거
+            middleMenu4.classList.remove("fixed");
+            topMenu.classList.remove("fixed");
+
+            document.body.style.paddingTop = "0";
+        }
+    });
+} else {
+    console.error('No middle-menu element found.');
+}
+
+
