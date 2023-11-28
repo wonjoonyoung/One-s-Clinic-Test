@@ -78,59 +78,51 @@ function syncScroll() {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const mainIntroduce = document.querySelector('.main-introduce');
-    const targetY800 = 800; // 첫 번째 요소의 원하는 Y값 설정
-
-    const mainIntroduceGraphic = document.querySelector('.main-introduce-graphic');
-    const targetY600 = 600; // 두 번째 요소의 원하는 Y값 설정
+    const targetY800 = 800;
 
     const functionalIntroduce = document.querySelector('.functional-introduce');
-    const targetY580 = 590; 
+    const targetY580 = 590;
 
     const functionalIntroduceList = document.querySelector('.functional-introduce-list');
-    const targetY560 = 560; 
+    const targetY560 = 560;
 
     const totalcareIntroduce = document.querySelector('.totalcare-introduce');
-    const targetY520 = 520; 
+    const targetY520 = 520;
 
     const totalcareIntroduceList = document.querySelector('.totalcare-introduce-list');
     const totalcareIntroduceListBtn = document.querySelector('.totalcare-introduce-list-btn');
-    const targetY500 = 510; 
-
+    const targetY500 = 510;
 
     function fadeInElement(element, targetY) {
         const elementTop = element.getBoundingClientRect().top;
 
-        // 특정 위치에 스크롤이 도달하면 visible 클래스를 추가하여 페이드인 효과 부여
+        console.log(`${element.classList[0]} Element Top:`, elementTop);
+
         if (elementTop < targetY) {
             element.classList.add('visible');
         }
     }
 
     function handleScroll() {
+        console.log('Scrolling...');
+
         fadeInElement(mainIntroduce, targetY800);
-        fadeInElement(mainIntroduceGraphic, targetY600);
         fadeInElement(functionalIntroduce, targetY580);
         fadeInElement(functionalIntroduceList, targetY560);
         fadeInElement(totalcareIntroduce, targetY520);
         fadeInElement(totalcareIntroduceList, targetY500);
         fadeInElement(totalcareIntroduceListBtn, targetY500);
 
-
-
-
         // 모든 페이드인이 완료되었을 때 스크롤 이벤트 제거
         if (
             mainIntroduce.classList.contains('visible') &&
-            mainIntroduceGraphic.classList.contains('visible') &&
             functionalIntroduce.classList.contains('visible') &&
             functionalIntroduceList.classList.contains('visible') &&
             totalcareIntroduce.classList.contains('visible') &&
             totalcareIntroduceList.classList.contains('visible') &&
             totalcareIntroduceListBtn.classList.contains('visible')
-
         ) {
             window.removeEventListener('scroll', handleScroll);
         }
@@ -141,6 +133,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 페이지 로드 시에도 확인하여 초기 페이드인 처리
     handleScroll();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // DOM이 로드된 후 실행되는 코드
+
+    // 초기에 숨겨진 상태로 설정
+    var goToTest = document.getElementById("goToTest");
+    if (goToTest) {
+        goToTest.style.opacity = "0";
+    }
+
+    // 스크롤 이벤트 핸들러 등록
+    window.addEventListener("scroll", function () {
+        // 스크롤 이벤트가 발생할 때 실행되는 코드
+
+        if (goToTest) {
+            // 스크롤이 발생하면 보이도록 설정
+            goToTest.style.opacity = "1";
+        }
+    });
+
+    // 새로 고침 후 초기 상태로 숨겨진 요소를 보이도록 설정
+    window.addEventListener("beforeunload", function () {
+        if (goToTest) {
+            goToTest.style.opacity = "0";
+        }
+    });
 });
 
 
