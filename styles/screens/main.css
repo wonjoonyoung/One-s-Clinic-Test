@@ -44,22 +44,24 @@
     }
 }
 
-.main-hero-text h3 {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 100%;
-    padding-left: 6px;
-    margin-bottom: 30px;
-}
-
 .main-hero-text h2 {
-    font-size: 40px;
+    font-size: 46px;
     font-weight: 400;
     line-height: 110%; /* 46px */
     letter-spacing: -1.84px;
     padding-left: 2px;
     margin-bottom: 16px;
 }
+
+.main-hero-text h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-left: 6px;
+    margin-bottom: 16px;
+}
+
+
 
 .main-hero-text h1 {
     font-size: 60px;
@@ -71,6 +73,19 @@
 
 
 /* 메인 정보 */
+
+.main-intro{
+    margin: 0 9vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.main-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
 
 .main-hero-info{
     display: flex;
@@ -157,15 +172,13 @@
     margin-top: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     opacity: 0; /* 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
-    margin-bottom: 160px;
+    margin-bottom: 56px;
 }
 
 .main-introduce h2{
-    text-align: center;
     font-size: 48px;
     font-weight: 300;
     line-height: 100%; /* 48px */
@@ -180,16 +193,16 @@
     line-height: 100%;
 }
 
-.main-introduce h3{
+/* .main-introduce h3{
     color: var(--gs);
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 36px */
+    line-height: 150%; 
     letter-spacing: -0.96px;
     margin-bottom: 40px;
-}
+} */
 
 .main-introduce-graphic{
     margin-top: 86px;
@@ -270,7 +283,7 @@
     border: 1px solid #DDD;
     background: #FFFDF6;
     margin-right: 1.2vw;
-    width: 33%;
+    width: 48%;
 
 }
 
