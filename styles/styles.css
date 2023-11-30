@@ -9,6 +9,7 @@
 @import "componets/header.css";
 @import "componets/sectiontitle.css";
 @import "componets/btn.css";
+@import "componets/footer.css";
 
 /* Screens */
 @import "screens/main.css";
@@ -20,6 +21,7 @@
 @import "screens/test-.css";
 @import "screens/text-result.css";
 @import "screens/notice.css";
+@import "screens/hospital.css";
 /* @import "screens/temporary.css";
 @import "screens/survry.css";
 @import "screens/text.css";

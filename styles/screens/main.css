@@ -193,16 +193,72 @@
     line-height: 100%;
 }
 
-/* .main-introduce h3{
-    color: var(--gs);
-    text-align: center;
-    font-size: 24px;
+
+.main-intro{
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+.main-intro-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-intro-title span{
+    display: block;
+    color: #7F896C;
+    font-size: 34px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%; 
-    letter-spacing: -0.96px;
-    margin-bottom: 40px;
-} */
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+}
+
+.main-intro-title{
+    color: #7F896C;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 57.6px */
+    margin-right: 4vw;
+}
+
+.main-intro-subtitle__text{
+    color: var(--gs-40, #656567);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+    letter-spacing: -0.8px;
+    margin-bottom: 46px;
+}
+
+.main-intro-wrap-test-warp{
+    display: flex ;
+}
+
+.main-intro-subtitle__wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.main-intro-subtitle__info__title{
+    color: var(--pri500);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%; /* 16.8px */
+    letter-spacing: -0.672px;
+    margin-bottom: 16px;
+}
+
+.main-intro-subtitle__info__subtitle{
+    color: var(--pri500);
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 43.2px; /* 100% */
+    letter-spacing: -1.728px;
+}
+
 
 .main-introduce-graphic{
     margin-top: 86px;
@@ -264,7 +320,7 @@
     align-items: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    /* opacity: 0;  */
+    opacity: 0; 
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
@@ -273,7 +329,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 160px;
-    /* opacity: 0;  */
+    opacity: 0; 
     transition: opacity 0.8s ease-in-out; 
 }
 
@@ -321,7 +377,7 @@
 .totalcare-introduce{
     text-align: center;
     margin-bottom: 48px;
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 
@@ -330,7 +386,7 @@
     justify-content: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 
@@ -368,10 +424,9 @@
     justify-content: center;
     margin-bottom: 160px;
     text-decoration: none;
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
-
 
 
 
@@ -469,7 +524,6 @@
     width: 100%;
     height: 18rem;
     border: 1px solid #c8c8c8;
-    background-image: url("https://mdtoday.co.kr/news/data/20230410/p1065604930780528_515_thum.jpg");
     box-shadow: 0 1rem 2.8rem rgba(0, 0, 0, 0.05);
     border-radius: 1rem;
     background-color: #fff;
@@ -481,6 +535,25 @@
     color: black;
   }
 
+  .main-media-item1{
+    background-image: url("../../img/png/main/news1.png");
+
+  }
+
+  .main-media-item2{
+    background-image: url("../../img/png/main/news2.png");
+
+  }
+
+  .main-media-item3{
+    background-image: url("../../img/png/main/news3.png");
+
+  }
+
+  .main-media-item4{
+    background-image: url("../../img/png/main/news4.png");
+
+  }
 
   .media-introduce-media__content-item__content__text{
     position: absolute;
@@ -523,12 +596,22 @@
     margin-right: 0;
 }
 
-.hospital-introduce-list__info__img{
+.hospital-introduce-list__info__img1{
     height: 24vw;
     border-radius: 12px;
     position: relative;
     margin-bottom: 24px;
     background-image: url("../../img/png/main/mokdong.png");
+    background-size: cover;
+}
+
+
+.hospital-introduce-list__info__img2{
+    height: 24vw;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 24px;
+    background-image: url("../../img/png/main/abgu.png");
     background-size: cover;
 }
 

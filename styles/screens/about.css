@@ -154,14 +154,24 @@
     background-color:#FFFDF6;
 }
 
-.about-solution-graphic__img{
+.about-solution-graphic__img1{
     width: 36vw;
     height: 20vw;
     border-radius: 12px;
     margin-right: 8vw;
-    background-image: url("../../img/png/about/about-program-img1.png");
+    background-image: url("../../img/png/about/about-program-img2.png");
     background-size: cover;
 }
+
+.about-solution-graphic__img2{
+    width: 36vw;
+    height: 20vw;
+    border-radius: 12px;
+    margin-right: 8vw;
+    background-image: url("../../img/png/about/about-program-img4.png");
+    background-size: cover;
+}
+
 
 .about-solution-graphic__text h3{
     color: var(--pri600);
@@ -204,12 +214,21 @@
     background-color: #FFFDF6;;
 }
 
-.about-solution-graphic-right__img{
+.about-solution-graphic-right__img1{
     width: 36vw;
     height: 20vw;
     border-radius: 12px;
     margin-left: 8vw;
-    background-image: url("../../img/png/about/about-program-img2.png");
+    background-image: url("../../img/png/about/about-program-img1.png");
+    background-size: cover;
+}
+
+.about-solution-graphic-right__img2{
+    width: 36vw;
+    height: 20vw;
+    border-radius: 12px;
+    margin-left: 8vw;
+    background-image: url("../../img/png/about/about-program-img3.png");
     background-size: cover;
 }
 
@@ -420,8 +439,9 @@
     width: 98%;
     height: 98%;
     border-radius: 10px;
-    background-color: #392613;
+    background-image: url('../../img/png/about/doctor1.png');
     box-sizing: border-box;
+    background-size: cover;
 }
 
 .about-space-content__tab1__team__info__profile__text{
