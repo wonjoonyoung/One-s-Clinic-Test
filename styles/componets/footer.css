@@ -3,6 +3,8 @@ footer{
     background: var(--dpri-15, #1A3129);
     padding: 48px 80px;
     padding: 4vw 12vw;
+    position: relative;
+    bottom: 0;
   }
   
   @media (max-width: 1032px) {
