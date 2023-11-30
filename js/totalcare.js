@@ -339,3 +339,75 @@ if (middleMenu) {
 }
 
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const defaultTotalTabId = 'totalcare-tab1';
+    
+    showTotalContent(defaultTotalTabId);
+
+    const Totaltabs = document.querySelectorAll('.introduce-introduce-list-warp');
+    Totaltabs.forEach(Totaltab => {
+        Totaltab.addEventListener('click', function () {
+            const TotaltabId = this.getAttribute('onclick').match(/'(.*?)'/)[1];
+            showTotalContent(TotaltabId);
+
+            // 선택된 탭에 border 추가
+            Totaltabs.forEach(Totaltab => {
+                Totaltab.classList.remove('active');
+            });
+            
+            this.classList.add('active');
+        });
+    });
+
+    // 페이지 로드 시에 기본 탭에 해당하는 버튼에 active 클래스 추가
+    const defaultTotalTabButton = document.querySelector(`.introduce-introduce-list-warp[onclick="showTotalContent('${defaultTotalTabId}')"]`);
+    if (defaultTotalTabButton) {
+        defaultTotalTabButton.classList.add('active');
+    }
+});
+
+
+
+
+// document.getElementById('myElement').addEventListener('click', function() {
+//     showTotalContent('totalcare-tab1');
+//     showContent('totalcare-aging-clinic-program_grade-tab1');
+
+//     // showTotalContent 함수에서 .active 클래스 추가
+//     this.classList.add('active');
+// });
+
+// function showTotalContent(TotaltabId) {
+//     const tabTotalContents = document.querySelectorAll('.introduce-introduce-list-warp');
+
+//     const selectedTotalTabContent = document.getElementById(TotaltabId);
+//     if (selectedTotalTabContent) {
+//         tabTotalContents.forEach(content => content.classList.remove('remove'));
+
+//         const allTotalTabs = document.querySelectorAll('.totalcare-aging_contents');
+//         allTotalTabs.forEach(tab => {
+//             if (tab !== selectedTotalTabContent) {
+//                 tab.classList.add('remove');
+//             }
+//         });
+
+//         // totalcare-tab1에만 .active 클래스 추가
+//         if (TotaltabId === 'totalcare-tab1') {
+//             selectedTotalTabContent.classList.add('active');
+//         }
+//     }
+// }
+
+// function showContent(tabId) {
+//     const selectedTabContent = document.getElementById(tabId);
+//     if (selectedTabContent) {
+//         const tabContents = document.querySelectorAll('.totalcare-aging-clinic-program_grade_contents');
+//         tabContents.forEach(content => content.classList.remove('active'));
+
+//         // totalcare-aging-clinic-program_grade-tab1에만 .active 클래스 추가
+//         if (tabId === 'totalcare-aging-clinic-program_grade-tab1') {
+//             selectedTabContent.classList.add('active');
+//         }
+//     }
+// }
