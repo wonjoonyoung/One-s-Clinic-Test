@@ -20,7 +20,7 @@
 
 
 <body>
-     <header class="header">        
+     <header class="header" id="header">        
         <div class="header-logo">
             <a href="index.html">
                 <img src="img/png/header/logo_main.png">
@@ -37,8 +37,33 @@
                 <li><a href="hospital.html">병원안내</a></li>
             </ul>
         </nav>
+
+        <img class="header-bar" src="img/svg/haeder/bars-3-bg.svg" alt="">
     </header>
 
+    <div class="mo-menu">
+        <img class="mo-menuX" src="img/svg/haeder/x-mark.svg" alt="">
+        <ul>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="introduce.html"><li>기능의학</li></a>
+            <a href="totalcare.html"><li>치료항목</li></a>
+            <a href="media.html"><li>미디어</li></a>
+            <a href="notice.html"><li>공지사항</li></a>
+            <a href="hospital.html"><li>병원안내</li></a>
+        </ul>
+    </div>
+
+    <!-- <div class="header-mobile">        
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/png/header/logo_main.png">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+        </nav>
+    </div> -->
 
 <main class="main-main">
 <div class="main-hero">
@@ -87,12 +112,19 @@
             ONE'S CLINIC
         </div>
         <div class="main-intro-subtitle">
-            <div class="main-intro-subtitle__text">
+            <div class="main-intro-subtitle__text web">
                 원스는 기능 의학을 기반으로 마인드와 바디의 밸런스를 이룸으로써 Reverse Aging(역노화)를 추구합니다.<br>
                 아픈곳을 가장 편하게 이야기 할 수 있고, 아프기 전에 건강을 먼저 챙길수 있는 공간에서<br>
                 여러분의 주치의로서, 적은 수의 진료를 보더라도 더 좋은 치료를 제공할 것을 약속드립니다. 
             </div>
-            <div class="main-intro-subtitle__wrap">
+
+            <div class="main-intro-subtitle__text mobile">
+                원스는 기능 의학을 기반으로 마인드와 바디의 밸런스를 <br>
+                이룸으로써. Reverse Aging(역노화)를 추구합니다.<br>
+                아픈곳을 가장 편하게 이야기 할 수 있고,  <br> 아프기 전에 건강을 먼저 챙길수 있는 공간에서<br>
+                여러분의 주치의로서, 적은 수의 진료를 보더라도<br>더 좋은 치료를 제공할 것을 약속드립니다. 
+            </div>
+            <div class="main-intro-subtitle__wrap web">
                 <div class="main-intro-subtitle__info">
                     <div class="main-intro-subtitle__info__title">
                         누적 환자 수
@@ -129,6 +161,47 @@
                     </div>
                 </div>
             </div>
+
+            <div class="main-intro-subtitle__wrap mobile">
+                <div class="main-intro-subtitle__wrap-mo-line">
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        누적 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        50,000 +
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        전문의 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        3
+                    </div>
+                </div>
+            </div>
+            <div class="main-intro-subtitle__wrap-mo-line">
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        평균 진료 시간
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        30min
+                    </div>
+                </div>
+
+                <div class="main-intro-subtitle__info">
+                    <div class="main-intro-subtitle__info__title">
+                        월간 정기 내원 환자 수
+                    </div>
+                    <div class="main-intro-subtitle__info__subtitle">
+                        500 +
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>  
     </div>
         <div class="main-btn">
@@ -170,9 +243,14 @@
     <div class="functional-introduce-text sectiontitle-left">
         <h3>본질에 집중하는 치료</h3>
         <h2>기능의학</h2>
-        <p>
+        <p class="web">
             건강 문제의 근본은, 우리 몸을 구성하는 '세포의 기능'에 있습니다. <br>
             One's Clinic은 기능의학을 추구하며 건강의 '본질'과 노화의 역행에 집중합니다.
+        </p>
+
+        <p class="mobile">
+            건강 문제의 근본은, 우리 몸을 구성하는 <br> '세포의 기능'에 있습니다.<br> 
+            One's Clinic은 기능의학을 추구하며<br>건강의 '본질'과 노화의 역행에 집중합니다.
         </p>
     </div>
     <a href="introduce.html" class="functional-introduce-btn">
@@ -239,15 +317,21 @@
     <div class="totalcare-introduce-text sectiontitle-left">
         <h3>근본을 해결하는 치료 프로그램</h3>
         <h2>원스클리닉 토탈케어</h2>
-        <p>
+        <p class="web">
             대부분의 건강 문제는 노화, 비만, 면역의 영역 안에서 유기적으로 발생합니다. <br>
             One's Clinic은 이 모든 영역을 동시에 해결할 수 있는 토탈 치료솔루션을 제안합니다.
+        </p>
+
+        <p class="mobile">
+            대부분의 건강 문제는 노화, 비만, 면역의 영역 안에서<br>
+            유기적으로 발생합니다. <br>
+            One's Clinic은 이 모든 영역을 동시에 해결할 수 있는<br> 토탈 치료솔루션을 제안합니다.
         </p>
     </div>
 </div>
 
 
-<div class="totalcare-introduce-list">
+<div class="totalcare-introduce-list web">
     <div class="totalcare-introduce-list-warp">
         <div class="totalcare-introduce-list__icon">
             <img src="img/svg/main/totalcare-introduce-list-aging.svg">
@@ -284,6 +368,50 @@
         </span>
     </div>
 
+</div>
+
+
+
+<div class="totalcare-introduce-list mobile">
+    <div class="totalcare-introduce-list-warp-mo">
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-aging.svg">
+        </div>
+        <span>Reverse-Aging <br>(역노화)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-slim.svg">
+        </div>
+        <span>One-Slim<br>(다이어트)</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-imm.svg">
+        </div>
+        <span>Immune<br>(면역)</span>
+    </div>
+</div>
+<div class="totalcare-introduce-list-warp-mo">
+
+    <div class="totalcare-introduce-list-warp list-warp-margin">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-mind.svg">
+        </div>
+        <span>마인드바디 밸런스</span>
+    </div>
+
+    <div class="totalcare-introduce-list-warp list-warp-margin">
+        <div class="totalcare-introduce-list__icon">
+            <img src="img/svg/main/totalcare-introduce-list-skin.svg">
+        </div>
+        <span>메디컬 스킨케어
+        </span>
+    </div>
+</div>
 </div>
 
 <a href="totalcare.html" class="totalcare-introduce-list-btn">
@@ -366,9 +494,17 @@
                                         </div>
                                     </div>
                                 </div></a>
+                            <div class="media-introduce-media__content-item">
+                                <a> <div class="media-introduce-media__content-item__content main-media-item3">
+                                        <div class="media-introduce-media__content-item__content__text">
+                                            원스클리닉이 지난 달 목동점 선오픈에 이어 <br>4월 10일 압구정점을 오픈했다.
+                                        </div>
+                                    </div>
+                                </div></a>
                 </div>
             </div>
         </div>
+        
         <button class="media-introduce-media-btn next">
             <span>Next</span>
         </button>

@@ -27,6 +27,7 @@
 }
 
 
+
 /* 메인 타이틀 */
 
 .main-hero-text{
@@ -53,6 +54,15 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-hero-text h2 {
+        font-size: 30px;
+    }
+    
+    }
+
+
+
 .main-hero-text h3 {
     font-size: 24px;
     font-weight: 400;
@@ -61,6 +71,13 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-hero-text h3 {
+        font-size: 20px;
+
+    }
+    
+    }
 
 
 .main-hero-text h1 {
@@ -71,21 +88,13 @@
     letter-spacing: -2.4px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-hero-text h1 {
+        font-size: 48px;
 
-/* 메인 정보 */
+    }
+    }
 
-.main-intro{
-    margin: 0 9vw;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 48px;
-}
-
-.main-btn{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 160px;
-}
 
 .main-hero-info{
     display: flex;
@@ -104,6 +113,15 @@
         opacity: 1;
     }
 }
+
+
+
+@media screen and (max-width: 1200px) {
+    .main-hero-info{
+        display: none;
+    }
+    
+    }
 
 .main-hero-info__content{
     display: flex;
@@ -167,8 +185,26 @@
     }
 }
 
+/* !!!!!!!!!!!!!!!메인 히어로 이미지!!!!!!!!!!!!!!!!!! */
 
-.main-introduce{
+
+.main-intro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main-intro{
+        margin-bottom: 36px;
+    }
+    }
+
+
+ .main-introduce{
     margin-top: 120px;
     display: flex;
     flex-direction: column;
@@ -176,7 +212,14 @@
     opacity: 0; /* 초기에 숨겨진 상태로 설정 */
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
     margin-bottom: 56px;
-}
+ }
+
+ @media screen and (max-width: 1200px) {
+    .main-introduce{
+        margin-top: 80px;
+        margin-bottom: 28px;
+    }
+    }
 
 .main-introduce h2{
     font-size: 48px;
@@ -186,6 +229,18 @@
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-introduce h2{
+        font-size: 40px;
+    }
+    }
+
+    @media screen and (max-width: 890px) {
+        .main-introduce h2{
+            font-size: 32px;
+        }
+    }
+
 .main-introduce h2 span{
     color: var(--pri600);
     font-size: 48px;
@@ -193,17 +248,36 @@
     line-height: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-introduce h2 span{
+        font-size: 40px;
+    }
+    }
 
-.main-intro{
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-}
+    @media screen and (max-width: 890px) {
+        .main-introduce h2 span{
+            font-size: 32px;
+        }
+    }
+
 
 
 .main-intro-wrap{
     display: flex;
     flex-direction: column;
 }
+
+.main-intro-wrap-test-warp{
+    display: flex ;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-intro-wrap-test-warp{
+        display: block ;
+        justify-items: center;
+    }
+    }
+
 
 .main-intro-title span{
     display: block;
@@ -214,6 +288,20 @@
     line-height: 120%; /* 57.6px */
 }
 
+@media screen and (max-width: 1200px) {
+    .main-intro-title span{
+        font-size: 28px;
+        text-align: center;
+    }
+    }
+    @media screen and (max-width: 890px) {
+        .main-intro-title span{
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+
 .main-intro-title{
     color: #7F896C;
     font-size: 48px;
@@ -223,24 +311,98 @@
     margin-right: 4vw;
 }
 
-.main-intro-subtitle__text{
-    color: var(--gs-40, #656567);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 150%; /* 30px */
-    letter-spacing: -0.8px;
-    margin-bottom: 46px;
-}
+@media screen and (max-width: 1200px) {
+    .main-intro-title{
+        font-size: 32px;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    }
 
-.main-intro-wrap-test-warp{
-    display: flex ;
+    @media screen and (max-width: 890px) {
+        .main-intro-title{
+            font-size: 30px;
+            margin-right: 0;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+
+    .main-intro-subtitle__text{
+        color: var(--gs-40, #656567);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%; /* 30px */
+        letter-spacing: -0.8px;
+        margin-bottom: 46px;
+    }
+
+@media screen and (max-width: 1200px) {
+    .main-intro-subtitle__text{
+        font-size: 16px;
+        line-height: 160%; /* 30px */
+        text-align: center;
+    
+    }
+    }
+
+.mobile{
+    display: none;
 }
+    @media screen and (max-width: 890px) {
+        .main-intro-subtitle__text{
+            font-size: 14px;
+            line-height: 160%; /* 30px */
+            text-align: center;
+            margin: 0 12px;
+            margin-bottom: 36px;
+        }
+        .web{
+            display: none;
+        }
+
+        .mobile{
+            display: block;
+        }
+    }
 
 .main-intro-subtitle__wrap{
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
 }
+
+.main-intro-subtitle__wrap.mobile{
+display: none;    
+}
+@media screen and (max-width: 1200px) {
+    .main-intro-subtitle__wrap{
+        margin-bottom: 40px;
+    }
+    .main-intro-subtitle__info{
+        padding: 12px 16px;
+    }
+
+    
+    }
+
+    @media screen and (max-width: 890px) {
+        .web{
+            display: none;
+        }
+        .main-intro-subtitle__wrap.mobile{
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 24px;
+        }
+        .main-intro-subtitle__wrap-mo-line{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
 .main-intro-subtitle__info__title{
     color: var(--pri500);
@@ -251,6 +413,20 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-intro-subtitle__info__title{
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    }
+    @media screen and (max-width: 890px) {
+        .main-intro-subtitle__info__title{
+            font-size: 10px;
+            margin-bottom: 0px;
+        }
+
+    }
+
 .main-intro-subtitle__info__subtitle{
     color: var(--pri500);
     font-size: 42px;
@@ -259,19 +435,49 @@
     letter-spacing: -1.728px;
 }
 
+@media screen and (max-width: 1200px) {
+    .main-intro-subtitle__info__subtitle{
+        font-size: 36px;
 
+    }
+    }
+
+    @media screen and (max-width: 890px) {
+        .main-intro-subtitle__info__subtitle{
+            font-size: 24px;
+        }
+
+    }
+
+.main-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-btn{
+        margin-bottom: 80px;
+    }
+    }
+
+
+/* !!!!!!!!!!!메인 소개 페이지!!!!!!!!!!!!!!!!! */
+
+
+/* 
 .main-introduce-graphic{
     margin-top: 86px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 160px;
-    opacity: 0; /* 초기에 숨겨진 상태로 설정 */
-    transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
-}
+    opacity: 0; 
+    transition: opacity 0.8s ease-in-out;
+} */
 
 
-.main-introduce-graphic h2 {
+/* .main-introduce-graphic h2 {
     color: var(--pri600);
     font-size: 48px;
     font-weight: 800;
@@ -309,9 +515,9 @@
     color: var(--gs700);
     font-size: 20px;
     font-weight: 500;
-    line-height: 150%; /* 30px */
+    line-height: 150%; 
     letter-spacing: -0.8px;
-}
+} */
 
 
 .functional-introduce{
@@ -324,6 +530,25 @@
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
+@media screen and (max-width: 1200px) {
+    .functional-introduce{
+        text-align: center;
+        display: block;
+        margin: 0 6vw;
+        margin-bottom: 36px;
+    }
+
+    .functional-introduce-text{
+        margin-bottom: 36px;
+    }
+    }
+
+@media screen and (max-width: 890px) {
+.functional-introduce-text{
+    margin-bottom: 24px;
+}
+    }   
+
 .functional-introduce-list{
     margin: 0 12vw;
     display: flex;
@@ -332,6 +557,24 @@
     opacity: 0; 
     transition: opacity 0.8s ease-in-out; 
 }
+
+@media screen and (max-width: 1200px) {
+    .functional-introduce-list{
+        margin: 0 6vw;
+        margin-bottom: 80px;
+    }
+        }   
+        @media screen and (max-width: 890px) {
+            .functional-introduce-list{
+                margin: 0 24px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 56px;
+                opacity: 0; 
+                transition: opacity 0.8s ease-in-out; 
+            }            
+        }
+        
 
 .functional-introduce-list-warp{
     padding: 40px;
@@ -343,9 +586,25 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+    .functional-introduce-list-warp{
+        padding: 32px;
+        margin-right: 1.2vw;
+        width: 48%;
+    }
+        }   
+        @media screen and (max-width: 890px) {
+            .functional-introduce-list-warp{
+                padding: 24px;
+                margin-right: 0;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 24px;
+            }        
+        }
+
 .functional-introduce-list-warp:last-child{
     margin-right: 0;
-
 }
 
 .functional-introduce-list-warp__icon{
@@ -358,7 +617,29 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 1200px) {
+    .functional-introduce-list-warp__icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
+    }
+        }   
 
+    @media screen and (max-width: 890px) {
+    .functional-introduce-list-warp__icon{
+        width: 36px;
+        height: 36px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }   
+        .functional-introduce-list-warp__icon img{
+            width: 24px;
+            height: 24px;
+            }    
+
+    }
 .functional-introduce-list-warp__title{
     color: var(--pri500);
     font-size: 22px;
@@ -367,12 +648,41 @@
     margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1200px) {
+    .functional-introduce-list-warp__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+        }   
+        @media screen and (max-width: 890px) {
+            .functional-introduce-list-warp__title{
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+        }
+
+
 .functional-introduce-list-warp__discription{
     color: var(--p);
     font-size: 18px;
     font-weight: 400;
     line-height: 160%; /* 28.8px */
 }
+
+@media screen and (max-width: 1200px) {
+    .functional-introduce-list-warp__discription{
+        font-size: 16px;
+    }
+        }   
+        @media screen and (max-width: 890px) {
+            .functional-introduce-list-warp__discription{
+                font-size: 14px;
+            }
+        }
+
+
+/* !!!!!!!!!!!!!!!!기능의학 소개!!!!!!!!!!!!!!!!! */
+
 
 .totalcare-introduce{
     text-align: center;
@@ -381,14 +691,53 @@
     transition: opacity 0.8s ease-in-out;
 }
 
+@media screen and (max-width: 890px) {
+    .totalcare-introduce-text .mobile{
+        display: block;
+        
+    }
+}
+
+
 .totalcare-introduce-list{
     display: flex;
     justify-content: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: opacity 0.8s ease-in-out;
 }
+
+.totalcare-introduce-list.mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .totalcare-introduce-list{
+        margin: 0 6vw;
+        margin-bottom: 36px;
+    }
+    .totalcare-introduce-list.web{
+        display: flex;
+    }
+        }   
+
+        @media screen and (max-width: 890px) {
+            .totalcare-introduce-list.web{
+                display: none;
+                
+            }
+
+            .totalcare-introduce-list.mobile{
+                display: flex;
+                margin-bottom: 36px;
+            }
+            .totalcare-introduce-list-warp{
+                margin-bottom: 24px;
+            }
+        }
+        
 
 .totalcare-introduce-list-warp{
     display: flex;
@@ -404,11 +753,53 @@
     box-sizing: border-box;
 }
 
+.totalcare-introduce-list-warp:last-child{
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .totalcare-introduce-list-warp{
+        padding: 20px 0 ;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        margin-right: 16px;
+        width: 120px;
+        height: 120px;
+    }
+        }   
+
+        @media screen and (max-width: 890px) {
+            .totalcare-introduce-list-warp{
+                padding: 20px 0 ;
+                border-radius: 12px;
+                border: 1px solid var(--border);
+                margin-right: 16px;
+                width: 120px;
+                height: 120px;
+            }
+            .list-warp-margin{
+                margin-right: 0;
+            }
+                }   
 .totalcare-introduce-list__icon{
     width: 34px;
     height: 34px;
     margin-bottom: 16px;
 }
+
+@media screen and (max-width: 1200px) {
+    .totalcare-introduce-list__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .totalcare-introduce-list__icon img{
+        width: 28px;
+        height: 28px;
+    }
+    
+        }   
 
 .totalcare-introduce-list-warp span{
     color: var(--pri500);
@@ -418,6 +809,14 @@
     letter-spacing: -0.8px;
     text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+    .totalcare-introduce-list-warp span{
+        font-size: 14px;
+        line-height: 18px; /* 120% */
+    }
+    
+        }   
 
 .totalcare-introduce-list-btn{
     display: flex;
@@ -429,6 +828,9 @@
 }
 
 
+/* !!!!!!!!!!!!!!!!!!!!!토탈케어!!!!!!!!!!!!!!!!! */
+
+
 
 
 .media-introduce{
@@ -438,12 +840,30 @@
     margin-bottom: 160px;
 }
 
+@media screen and (max-width: 1200px) {
+    .media-introduce{
+        padding: 80px 0;
+        margin-bottom: 80px;
+    }
+        }   
+
+
 .media-introduce-text-wrap{
     margin: 0 12vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+@media screen and (max-width: 1200px) {
+    .media-introduce-text-wrap{
+        margin: 0 6vw;
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+        }   
+
 
 
 .media-introduce-text{
@@ -452,6 +872,14 @@
     align-items: flex-start;
     margin-bottom: 40px;
 }
+
+@media screen and (max-width: 1200px) {
+    .media-introduce-text{
+        align-items: center;
+        margin-bottom: 0;
+        text-align: center;
+    }
+        }   
 
 .functional-introduce-btn{
     display: flex;
@@ -466,6 +894,7 @@
     margin: 0 auto;
     box-sizing: border-box; 
 }
+
 
 .media-introduce-media-btn{
     display: none;
@@ -503,6 +932,7 @@
     height: 20rem;
 }
 
+
 .media-introduce-media__content-items{
     position: absolute;
     width: 3600px; 
@@ -511,6 +941,19 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+@media screen and (max-width: 890px) {
+    .media-introduce-media__content-items{
+        position: absolute;
+        width: 3000px; 
+        top: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        }  
+        
+
 
 .media-introduce-media__content-item {
     width: 100%;
@@ -569,7 +1012,19 @@
     font-weight: 500;
     line-height: 150%; /* 21px */
   }
+
+  @media screen and (max-width: 890px) {
+    .media-introduce-media__content-item__content__text{
+        font-size: 14px;
+      }
+    
+        }  
+        
  
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!미디어!!!!!!!!!!!!!!!!!!!!!!! */
+
 
   .hospital-introduce{
     display: flex;
@@ -580,6 +1035,15 @@
     transition: opacity 0.8s ease-in-out; /* 페이드인 애니메이션 속성 설정 */
 }
 
+@media screen and (max-width: 1200px) {
+    .hospital-introduce{
+        display: block;
+        text-align: center;
+        margin: 0 6vw;
+        margin-bottom: 24px;
+    }
+        }   
+
 .hospital-introduce-list{
     margin: 0 12vw;
     display: flex;
@@ -587,10 +1051,30 @@
     margin-bottom: 160px;
 }
 
+@media screen and (max-width: 1200px) {
+    .hospital-introduce-list{
+        display: block;
+        margin: 0 6vw;
+        margin-bottom: 80px;
+    }
+        }   
+
+
 .hospital-introduce-list__info{
     margin-right: 1.2vw;
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    .hospital-introduce-list__info{
+        margin-right: 1.2vw;
+        width: 100%;
+    }
+
+    .hospital-introduce-text{
+        margin: 24px 0;
+    }
+        }   
 
 .hospital-introduce-list__info:last-child{
     margin-right: 0;
@@ -605,6 +1089,30 @@
     background-size: cover;
 }
 
+@media screen and (max-width: 1200px) {
+    .hospital-introduce-list__info__img1{
+        margin: 0 auto;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 24px;
+        background-image: url("../../img/png/main/mokdong.png");
+        background-size: cover;
+    }
+        }   
+
+
+@media screen and (max-width: 890px) {
+    .hospital-introduce-list__info__img1{
+        margin: 0 auto;
+        width: 320px;
+        height: 220px;
+        margin-bottom: 24px;
+        background-image: url("../../img/png/main/mokdong.png");
+        background-size: cover;
+    }
+}   
+
+
 
 .hospital-introduce-list__info__img2{
     height: 24vw;
@@ -615,28 +1123,70 @@
     background-size: cover;
 }
 
-.hospital-introduce-list__info__img__icon{
-    position: absolute;
-    bottom: 24px;
-    right: 24px;
-    width: 48px;
-    height: 48px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@media screen and (max-width: 1200px) {
+    .hospital-introduce-list__info__img2{
+        margin: 0 auto;
+        width: 480px;
+        height: 360px;
+        margin-bottom: 24px;
+        background-image: url("../../img/png/main/mokdong.png");
+        background-size: cover;
+    }
+        }   
 
-.hospital-introduce-list__info__img__icon img{
-    width: 36px;
-    height: 36px;
-}
+        @media screen and (max-width: 890px) {
+            .hospital-introduce-list__info__img2{
+                margin: 0 auto;
+                width: 320px;
+                height: 220px;
+                margin-bottom: 24px;
+                background-image: url("../../img/png/main/mokdong.png");
+                background-size: cover;
+            }
+        }   
+        
+        
 
 .hospital-introduce-list__info__text{
     margin-left: 12px;
     margin-bottom: 24px;
 }
+
+@media screen and (max-width: 1200px) {
+    .hospital-introduce-list__info__text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .hospital-introduce-list__info__sns {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    
+        }  
+
+    
+        @media screen and (max-width: 890px) {
+            .hospital-introduce-list__info__text{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+        
+            .hospital-introduce-list__info__sns {
+                text-align: center;
+                margin-bottom: 24px;
+            }
+        }   
+        
+
 
 .hospital-introduce-list__info__text h3{
     color: var(--pri500);
@@ -647,6 +1197,14 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 890px) {
+    .hospital-introduce-list__info__text h3{
+        font-size: 16px;
+        line-height: 20px; /* 85.714% */
+        margin-bottom: 8px;
+    }
+}   
+
 .hospital-introduce-list__info__text__info{
     color: var(--gs);
     font-size: 20px;
@@ -656,12 +1214,33 @@
     align-items: center;
 }
 
+@media screen and (max-width: 890px) {
+    .hospital-introduce-list__info__text__info{
+        font-size: 14px;
+    }
+}   
+
 .hospital-introduce-list__info__text__info span {
     width: 24px;
     height: 24px;
     margin-right: 8px;
     display: inline-block;
 }
+
+@media screen and (max-width: 890px) {
+    .hospital-introduce-list__info__text__info span {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+
+    .hospital-introduce-list__info__text__info img {
+        width: 16px;
+        height: 16px;
+    }
+}   
+
 
 .hospital-introduce-list__info__sns span{
     width: 64px;
@@ -670,12 +1249,69 @@
     margin-right: 16px;
 }
 
+@media screen and (max-width: 890px) {
+
+    .hospital-introduce-list__info__sns a{
+        margin-right: 12px;
+    }
+
+    .hospital-introduce-list__info__sns a:last-child{
+        margin-right: 0;
+    }
+    .hospital-introduce-list__info__sns span{
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        margin-right: 12px;
+    }
+
+    .hospital-introduce-list__info__sns span:last-child{
+        margin-right: 0;
+    }
+
+    .hospital-introduce-list__info__sns span img{
+        width: 36px;
+        height: 36px;
+    }
+}   
+
+
+/* .hospital-introduce-list__info__img__icon{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .hospital-introduce-list__info__img__icon img{
+    width: 36px;
+    height: 36px;
+} */
+
+
+/* !!!!!!!!병원 예약!!!!!!!!!!!!! */
+
 .reservation-info{
     padding: 120px 12vw;
     display: flex;
     justify-content: space-between;
     background-color: #FFFDF6;
 }
+
+@media screen and (max-width: 1200px) {
+    .reservation-info{
+        padding: 60px 6vw;
+        display: block;
+        text-align: center;
+    }
+}
+
 
 .reservation-info h3{
     color: var(--pri600);
@@ -686,6 +1322,21 @@
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 1200px) {
+    .reservation-info h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .reservation-info h3{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+
 .reservation-info h4{
     color: var(--gs);
     font-size: 22px;
@@ -694,6 +1345,19 @@
     letter-spacing: -0.96px;
 }
 
+@media screen and (max-width: 1200px) {
+    .reservation-info h4{
+        font-size: 16px;
+        line-height: 160%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .reservation-info h4{
+        font-size: 14px;
+        line-height: 160%;
+    }
+}
 
 
 .go-to-test {
@@ -713,6 +1377,15 @@
     line-height: 120%;
   }
 
+  @media screen and (max-width: 890px) {
+ 
+.go-to-test {
+    bottom: 24px; /* 원하는 위치로 조정 */
+    right: 24px; /* 원하는 위치로 조정 */
+    font-size: 12px;
+  }
+}
+
   .go-to-test div{
     width: 56px;
     height: 56px;
@@ -723,6 +1396,7 @@
     margin-bottom: 4px;
     border-radius: 12px;
   }
+  
 
 
 

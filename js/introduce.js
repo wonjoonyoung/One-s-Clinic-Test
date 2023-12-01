@@ -291,6 +291,13 @@ function showContent(tabId) {
 
     // 모달을 닫는 요소 (X 버튼)
     const closeBtn = document.getElementById('closeBtn');
+    const closeBtn2 = document.getElementById('closeBtn2');
+    const closeBtn3 = document.getElementById('closeBtn3');
+    const closeBtn4 = document.getElementById('closeBtn4');
+    const closeBtn5 = document.getElementById('closeBtn5');
+    const closeBtn6 = document.getElementById('closeBtn6');
+    const closeBtn7 = document.getElementById('closeBtn7');
+
 
     // 클릭 이벤트 리스너 등록
     if (modalTrigger && closeBtn) {
@@ -326,7 +333,7 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal2) {
                 modal2.style.display = 'none';
             }
         });
@@ -348,7 +355,7 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal3) {
                 modal3.style.display = 'none';
             }
         });
@@ -369,7 +376,7 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal4) {
                 modal4.style.display = 'none';
             }
         });
@@ -390,7 +397,7 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal5) {
                 modal5.style.display = 'none';
             }
         });
@@ -411,7 +418,7 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal6) {
                 modal6.style.display = 'none';
             }
         });
@@ -432,10 +439,190 @@ function showContent(tabId) {
 
         // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
         window.addEventListener('click', function (event) {
-            if (event.target === modal) {
+            if (event.target === modal7) {
                 modal7.style.display = 'none';
             }
         });
     } else {
         console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
     };
+
+
+    const modalMoTrigger = document.getElementById('modalMoTrigger1');
+    const modalMoTrigger2 = document.getElementById('modalMoTrigger2');
+    const modalMoTrigger3 = document.getElementById('modalMoTrigger3');
+    const modalMoTrigger4 = document.getElementById('modalMoTrigger4');
+    const modalMoTrigger5 = document.getElementById('modalMoTrigger5');
+    const modalMoTrigger6 = document.getElementById('modalMoTrigger6');
+    const modalMoTrigger7 = document.getElementById('modalMoTrigger7');
+
+
+
+    if (modalMoTrigger && closeBtnMo) {
+        modalMoTrigger.addEventListener('click', function () {
+            modal.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+
+
+    if (modalMoTrigger2 && closeBtnMo) {
+        modalMoTrigger2.addEventListener('click', function () {
+            modal2.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal3.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal2) {
+                modal2.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+
+    if (modalMoTrigger3 && closeBtnMo) {
+        modalMoTrigger3.addEventListener('click', function () {
+            modal3.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal3.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal3) {
+                modal3.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+
+
+    if (modalMoTrigger4 && closeBtnMo) {
+        modalMoTrigger4.addEventListener('click', function () {
+            modal4.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal4.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal4) {
+                modal4.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+
+
+    if (modalMoTrigger5 && closeBtnMo) {
+        modalMoTrigger5.addEventListener('click', function () {
+            modal5.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal5.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal5) {
+                modal5.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+    
+    if (modalMoTrigger6 && closeBtnMo) {
+        modalMoTrigger6.addEventListener('click', function () {
+            modal6.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal6.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal6) {
+                modal6.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+
+    if (modalMoTrigger7 && closeBtnMo) {
+        modalMoTrigger7.addEventListener('click', function () {
+            modal7.style.display = 'block';
+        });
+
+        // 모달을 닫는 이벤트 리스너 등록
+        closeBtnMo.addEventListener('click', function () {
+            modal7.style.display = 'none';
+        });
+
+        // 모달 외부를 클릭했을 때도 모달이 닫히도록 설정
+        window.addEventListener('click', function (event) {
+            if (event.target === modal7) {
+                modal7.style.display = 'none';
+            }
+        });
+    } else {
+        console.error('modalTrigger 또는 closeBtn 요소를 찾을 수 없습니다.');
+    };
+    
+
+const moHeaderHam = document.querySelector(".header-bg-bar")
+const moheader =  document.querySelector(".mo-menu")
+const moHeaderX = document.querySelector(".mo-menuX")
+
+function showmoheader(){
+    moheader.classList.add('active')
+}
+
+moHeaderHam.addEventListener("click", showmoheader);
+
+
+function closemoheader(){
+    moheader.classList.remove('active')
+}
+
+moHeaderX.addEventListener("click", closemoheader);
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+
+ 

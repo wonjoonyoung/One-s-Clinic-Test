@@ -1,4 +1,15 @@
+function updateHeader() {
+    const normalHeader = document.querySelector('.header');
+    const burgerHeader = document.querySelector('.burger-header');
 
+    if (window.innerWidth >= 700) {
+        normalHeader.style.visibility = 'hidden';
+        burgerHeader.style.display = 'block';
+    } else {
+        normalHeader.style.visibility = 'visible';
+        burgerHeader.style.display = 'none';
+    }
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -10,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const mainHeader = document.querySelector('.header');
     const headrNavA = document.querySelectorAll('.header-nav a');
     const headrNavLogo = document.querySelector('.header-logo a img');
+    const headrNavBar = document.querySelector('.header-bar');
 
+    
     let ticking = false;
 
     if (mainHero) {
@@ -26,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Element with class "main-hero" not found.');
     }
+
+
 });
 
 function syncScroll() {
@@ -35,8 +50,7 @@ function syncScroll() {
     const mainHeader = document.querySelector('.header');
     const headrNavA = document.querySelectorAll('.header-nav a');
     const headrNavLogo = document.querySelector('.header-logo a img');
-
-
+    const headrNavBar = document.querySelector('.header-bar');
 
 
     if (mainHero && window.scrollY > 0) {
@@ -59,6 +73,9 @@ function syncScroll() {
     }
     if (headrNavLogo && window.scrollY > 0) {
         headrNavLogo.src = 'img/png/header/logo_bg.png';
+    }
+    if (headrNavBar && window.scrollY > 0) {
+        headrNavBar.src = 'img/svg/haeder/bars-3.svg';
     }
     if (headrNavA && window.scrollY > 0) {
          headrNavA.forEach(link => {
@@ -243,7 +260,22 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const moHeaderHam = document.querySelector(".header-bar")
+const moheader =  document.querySelector(".mo-menu")
+const moHeaderX = document.querySelector(".mo-menuX")
 
+function showmoheader(){
+    moheader.classList.add('active')
+}
+
+moHeaderHam.addEventListener("click", showmoheader);
+
+
+function closemoheader(){
+    moheader.classList.remove('active')
+}
+
+moHeaderX.addEventListener("click", closemoheader);
 
 
 window.onbeforeunload = function () {
