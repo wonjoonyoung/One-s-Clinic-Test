@@ -26,7 +26,9 @@
     transition: height 0.2s ease-in-out, width 0.3s ease-in-out, border-radius 0.3s ease-in-out; /* 더 부드러운 애니메이션으로 수정 */
 }
 
-
+.introduce-introduce-list.mobile{
+    display: none;
+}
 
 /* 메인 타이틀 */
 

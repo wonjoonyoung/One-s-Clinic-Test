@@ -368,5 +368,43 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+const moHeaderHam = document.querySelector(".header-bg-bar")
+const moheader =  document.querySelector(".mo-menu")
+const moHeaderX = document.querySelector(".mo-menuX")
+
+function showmoheader(){
+    moheader.classList.add('active')
+}
+
+moHeaderHam.addEventListener("click", showmoheader);
 
 
+function closemoheader(){
+    moheader.classList.remove('active')
+}
+
+moHeaderX.addEventListener("click", closemoheader);
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 페이지가 로드되면 실행되는 부분
+
+    // 추가하고자 하는 클래스
+    const additionalClass = 'active';
+
+    // 클래스를 추가하고자 하는 대상 엘리먼트
+    const targetElement = document.getElementById('introduce-list__icon-basic');
+
+    if (targetElement) {
+        // 클래스를 추가
+        targetElement.classList.add(additionalClass);
+    } else {
+        console.error('대상 엘리먼트를 찾을 수 없습니다.');
+    }
+});

@@ -22,6 +22,20 @@
     }
 }
 
+
+@media screen and (max-width: 890px) {
+    .hosptial-info-contents-wrap{
+        margin: 0 24px;
+        padding: 36px 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        max-width: 1000px;
+    }
+    
+}
+
+
 .hosptial-info-contents-text{
     margin-right: 48px;
 }
@@ -30,6 +44,15 @@
 
     .hosptial-info-contents-text{
         margin-right: 36px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .hosptial-info-contents-text{
+        margin-right: 0;
+        padding-left: 24px;
+
     }
 }
 
@@ -121,6 +144,7 @@
     margin-right: 12px;
 }
 
+
 .hosptial-info-contents-img{
     width: 480px;
     height: 284px;
@@ -134,5 +158,21 @@
         height: 275px;
         background-color: antiquewhite;
         border-radius: 12px;
+    }
+}
+
+
+@media screen and (max-width: 890px) {
+
+    .hosptial-info-contents-img{
+        width: 320px;
+        height: 180px;
+        background-color: antiquewhite;
+        border-radius: 12px;
+        margin-bottom: 36px;
+    }
+
+    .hosptial-info-contents-sns a span img{
+        width: 48px;
     }
 }

@@ -20,7 +20,7 @@
 
 
 <body>
-     <header class="header-bg" id="top-menu">
+     <!-- <header class="header-bg" id="top-menu">
         <div class="header-bg-logo">
             <a href="index.html">
                 <img src="img/png/header/logo_bg.png">
@@ -37,7 +37,41 @@
                 <li><a href="hospital.html">병원안내</a></li>
             </ul>
         </nav>
+    </header> -->
+
+
+    <header class="header-bg" id="top-menu">        
+        <div class="header-bg-logo">
+            <a href="index.html">
+                <img src="img/png/header/logo_bg.png">
+            </a>
+        </div>
+
+        <nav class="header-bg-nav">
+            <ul>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="introduce.html">기능의학</a></li>
+                <li><a href="totalcare.html">치료항목</a></li>
+                <li><a href="media.html">미디어</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+                <li><a href="hospital.html">병원안내</a></li>
+            </ul>
+        </nav>
+
+        <img class="header-bg-bar" src="img/svg/haeder/bars-3.svg" alt="">
     </header>
+
+    <div class="mo-menu">
+        <img class="mo-menuX" src="img/svg/haeder/x-mark.svg" alt="">
+        <ul>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="introduce.html"><li>기능의학</li></a>
+            <a href="totalcare.html"><li>치료항목</li></a>
+            <a href="media.html"><li>미디어</li></a>
+            <a href="notice.html"><li>공지사항</li></a>
+            <a href="hospital.html"><li>병원안내</li></a>
+        </ul>
+    </div>
 
 <main class="totalcare-main">
 
@@ -45,15 +79,20 @@
         <div class="introduce-intro-text sectiontitle-left">
             <h3>근본을 해결하는 치료 프로그램</h3>
             <h2>원스클리닉 토탈케어</h2>
-            <p>
+            <p class="web">
                 대부분의 건강 문제는 노화, 비만, 면역의 영역 안에서 유기적으로 발생합니다.<br>
                 One's Clinic은 이 모든 영역을 동시에 해결할 수 있는 토탈 치료솔루션을 제안합니다.
+            </p>
+
+            <p class="mobile">
+                대부분의 건강 문제는 노화, 비만, 면역의<br> 영역 안에서 유기적으로 발생합니다.<br>
+                One's Clinic은 이 모든 영역을 동시에<br> 해결할 수 있는 토탈 치료솔루션을 제안합니다.
             </p>
         </div>
     </div> 
 
-    <div class="introduce-introduce-list">
-        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp" id="myElement" onclick="showTotalContent('totalcare-tab1')"; onclick="showContent('totalcare-aging-clinic-program_grade-tab1')">
+    <div class="introduce-introduce-list web">
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp" onclick="showTotalContent('totalcare-tab1')"; onclick="showContent('totalcare-aging-clinic-program_grade-tab1')">
             <div class="totalcare-introduce-list__icon">
                 <img src="img/svg/main/totalcare-introduce-list-aging.svg">
             </div>
@@ -88,6 +127,56 @@
             <span>메디컬 스킨케어</span>
         </div>
     </div>
+
+
+    <div class="introduce-introduce-list mobile">
+        <div class="introduce-introduce-list-mo-wrap">
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp" id="introduce-list__icon-basic" onclick="showTotalContent('totalcare-tab1')"; onclick="showContent('totalcare-aging-clinic-program_grade-tab1')">
+            <div class="totalcare-introduce-list__icon">
+                <img src="img/svg/main/totalcare-introduce-list-aging.svg">
+            </div>
+            <span>Reverse-Aging <br>(역노화)</span>
+        </div>
+    
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp"  onclick="showTotalContent('totalcare-tab2')">
+            <div class="totalcare-introduce-list__icon">
+                <img src="img/svg/main/totalcare-introduce-list-slim.svg">
+            </div>
+            <span>ONE'SLIM BALANCE<br>(다이어트)</span>
+        </div>
+    </div>
+    <div class="introduce-introduce-list-mo-wrap">
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp"  onclick="showTotalContent('totalcare-tab3')">
+            <div class="totalcare-introduce-list__icon">
+                <img src="img/svg/main/totalcare-introduce-list-imm.svg">
+            </div>
+            <span>Immune<br>(면역)</span>
+        </div>
+    
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp"  onclick="showTotalContent('totalcare-tab4')">
+            <div class="totalcare-introduce-list__icon">
+                <img src="img/svg/main/totalcare-introduce-list-mind.svg">
+            </div>
+            <span>마인드바디 밸런스</span>
+        </div>
+    </div>
+
+    <div class="introduce-introduce-list-mo-wrap">
+        <div class="totalcare-introduce-list-warp introduce-introduce-list-warp"  onclick="showTotalContent('totalcare-tab5')">
+            <div class="totalcare-introduce-list__icon">
+                <img src="img/svg/main/totalcare-introduce-list-skin.svg">
+            </div>
+            <span>메디컬 스킨케어</span>
+        </div>
+        <div class="totalcare-introduce-list-warp  introduce-list-warp-noborder">
+
+        </div>
+    </div>
+
+    </div>
+
+
+
 
     <div id="totalcare-tab1" class="totalcare-aging_contents">
         <div class="totalcare-aging">
