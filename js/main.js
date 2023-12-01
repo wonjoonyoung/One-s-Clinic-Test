@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetY580 = 590;
 
     const functionalIntroduceList = document.querySelector('.functional-introduce-list');
+    const functionalIntroduceMobileList = document.querySelector('.functional-introduce-list.mobile');
     const targetY560 = 560;
 
     const totalcareIntroduce = document.querySelector('.totalcare-introduce');

@@ -122,7 +122,8 @@
     .test-survey-form__questions label input[type="radio"]:checked {
     width: 20px;
     height: 20px;
-    border: 6px solid var(--dpri-20);
+    background-color: #ededed;
+    border: 8px solid #656567;
         }
 }
 
@@ -170,8 +171,8 @@
 
 @media (max-width: 660px) {
     #check-answers:hover {
-    background: var(--green-70);
-    color: var(--green-70);
+    background: var(--btn);
+    color: white;
         }
 }
 
