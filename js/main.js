@@ -107,16 +107,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetY580 = 590;
 
     const functionalIntroduceList = document.querySelector('.functional-introduce-list');
-    const functionalIntroduceMobileList = document.querySelector('.functional-introduce-list.mobile');
     const targetY560 = 560;
 
     const totalcareIntroduce = document.querySelector('.totalcare-introduce');
     const targetY520 = 520;
 
     const totalcareIntroduceList = document.querySelector('.totalcare-introduce-list');
+    const totalcareIntroduceMoList = document.querySelector('.totalcare-introduce-list.mobile');
     const totalcareIntroduceListBtn = document.querySelector('.totalcare-introduce-list-btn');
 
-    const targetY500 = 510;
+    const targetY500 = 500;
 
     function fadeInElement(element, targetY) {
         const elementTop = element.getBoundingClientRect().top;
@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeInElement(functionalIntroduceList, targetY560);
         fadeInElement(totalcareIntroduce, targetY520);
         fadeInElement(totalcareIntroduceList, targetY500);
+        fadeInElement(totalcareIntroduceMoList, targetY500);
         fadeInElement(totalcareIntroduceListBtn, targetY500);
         fadeInElement(mainTotalcareBtn, targetY500);
         
@@ -149,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
             functionalIntroduceList.classList.contains('visible') &&
             totalcareIntroduce.classList.contains('visible') &&
             totalcareIntroduceList.classList.contains('visible') &&
+            totalcareIntroduceMoList.classList.contains('visible') &&
             totalcareIntroduceListBtn.classList.contains('visible')
         ) {
             window.removeEventListener('scroll', handleScroll);

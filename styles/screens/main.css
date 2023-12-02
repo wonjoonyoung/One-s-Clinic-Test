@@ -706,7 +706,7 @@ display: none;
     justify-content: center;
     margin: 0 12vw;
     margin-bottom: 48px;
-    /* opacity: 0; */
+    opacity: 0;
     transition: opacity 0.8s ease-in-out;
 }
 
