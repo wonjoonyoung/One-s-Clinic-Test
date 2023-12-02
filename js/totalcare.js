@@ -408,3 +408,29 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('대상 엘리먼트를 찾을 수 없습니다.');
     }
 });
+
+
+
+const totalcareIntroduceChoise = document.querySelectorAll(".totalcare-introduce-list-warp");
+const ChoiseBasic = document.querySelectorAll(".basic");
+const ChoiseContent = document.querySelectorAll(".basic_content");
+
+function choise() {
+    console.log("Clicked on:", this); // 클릭한 요소 출력
+
+    // NodeList인 ChoiseBasic 및 ChoiseContent를 forEach로 반복하여 각 요소에 클래스 조작
+    ChoiseBasic.forEach(function (element) {
+        console.log("Adding 'active' class to ChoiseBasic:", element); // 각 ChoiseBasic에 클래스 추가하는 로그
+        element.classList.add("active");
+    });
+
+    ChoiseContent.forEach(function (element) {
+        console.log("Adding 'active' class to ChoiseContent:", element); // 각 ChoiseContent에 클래스 추가하는 로그
+        element.classList.add("active");
+    });
+}
+
+// 각 totalcareIntroduceChoise 요소에 대해 이벤트 리스너 등록
+totalcareIntroduceChoise.forEach(function (element) {
+    element.addEventListener("click", choise);
+});
