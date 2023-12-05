@@ -798,6 +798,25 @@ display: none;
 }
 
 
+.functional-introduce-img{
+    margin: 0 12vw ;
+    margin-bottom: 56px;
+}
+
+@media screen and (max-width: 1200px) {
+    .functional-introduce-img{
+        margin: 0 6vw ;
+        margin-bottom: 36px;
+    }
+    }
+
+    @media screen and (max-width: 890px) {
+        .functional-introduce-img{
+            margin: 0 0;
+            margin-bottom: 24px;
+        }
+        }
+
 .totalcare-introduce-list{
     display: flex;
     justify-content: center;

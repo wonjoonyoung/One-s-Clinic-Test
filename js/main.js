@@ -104,10 +104,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetY650 = 650;
 
     const mainIntroduceGraphic = document.querySelector('.main-introduce-graphic');
-    const targetY620 = 620;
+    const targetY600 = 600;
 
     const functionalIntroduce = document.querySelector('.functional-introduce');
     const targetY580 = 590;
+
+    const functionalIntroduceImg = document.querySelector('.functional-introduce-img')
+    const targetY550 = 550;
 
     const functionalIntroduceList = document.querySelector('.functional-introduce-list');
     const targetY560 = 560;
@@ -136,8 +139,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         fadeInElement(mainIntroduce, targetY800);
         fadeInElement(mainIntro, targetY650);
-        fadeInElement(mainIntroduceGraphic, targetY620);
+        fadeInElement(mainIntroduceGraphic, targetY600);
         fadeInElement(functionalIntroduce, targetY580);
+        fadeInElement(functionalIntroduceImg, targetY550);
         fadeInElement(functionalIntroduceList, targetY560);
         fadeInElement(totalcareIntroduce, targetY520);
         fadeInElement(totalcareIntroduceList, targetY500);
@@ -151,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
             mainIntroduce.classList.contains('visible') &&
             mainIntro.contains('visible') &&
             mainIntroduceGraphic.contains('visible') &&
+            functionalIntroduceImg.contains('visible') &&
             functionalIntroduce.classList.contains('visible') &&
             functionalIntroduceList.classList.contains('visible') &&
             totalcareIntroduce.classList.contains('visible') &&
