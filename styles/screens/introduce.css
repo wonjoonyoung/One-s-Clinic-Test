@@ -183,6 +183,13 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 890px) {
+    .introduce-carepart-content-warp-line{
+        margin-bottom: 48px;
+    }
+    
+        }     
+
 .introduce-carepart-content{
     padding: 16px 24px;
     box-sizing: border-box;
@@ -199,10 +206,12 @@
 
 @media screen and (max-width: 890px) {
     .introduce-carepart-content__title{
-        font-size: 16px;
+        font-size: 15px;
     }
         }     
 
+
+        
 
 /* !!!!!!!!!!!!!!!!!!!!!!진료과목!!!!!!!!!!!!!!!!!!!! */
 
