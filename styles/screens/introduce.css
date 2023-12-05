@@ -47,6 +47,14 @@
     }
         }   
 
+        @media screen and (max-width: 890px) {
+            .introduce-intro-img{
+                margin: 0;
+                width: 100%;
+                margin-bottom: 32px;
+            }
+                }   
+
 .introduce-introduce{
     margin: 0 12vw;
     margin-top: 160px;
