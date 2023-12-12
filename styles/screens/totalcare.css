@@ -243,7 +243,7 @@
     padding-bottom: 1vw;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 890px) {
@@ -256,18 +256,19 @@
 }
 
 .totalcare-aging-clinic-content__list{
-    width: 32%;
+    width: 25%;
     height: 16vw;
     display: flex;
     flex-direction: column;
     padding: 4px;
 }
 
+
 @media screen and (max-width: 890px) {
 
     .totalcare-aging-clinic-content__list{
         width: 100%;
-        height: 16vw;
+        height: 72px;
         flex-direction: row;
 
     }
@@ -283,15 +284,19 @@
     align-items: center;
 }
 
+.totalcare-aging-clinic-content__list_img img{
+    width: 120px;
+}
+
 @media screen and (max-width: 1200px) {
 
     .totalcare-aging-clinic-content__list_img{
         border-radius: 12px;
-        width: 80px;
         margin-right: 12px;
+        width: 100%;
     }
     .totalcare-aging-clinic-content__list_img img{
-        width: 28px;
+        width: 72px;
     }
 }
 
@@ -299,6 +304,7 @@
 
     .totalcare-aging-clinic-content__list_img{
         border-radius: 12px;
+        width: 80px;
     }
     .totalcare-aging-clinic-content__list_img img{
         width: 48px;
