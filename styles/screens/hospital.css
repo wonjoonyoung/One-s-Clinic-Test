@@ -148,7 +148,7 @@
 .hosptial-info-contents-img{
     width: 480px;
     height: 284px;
-    background-color: antiquewhite;
+    background-image: url('../../img/png/hospital/1.png');
     border-radius: 12px;
 }
 @media screen and (max-width: 1200px) {
@@ -156,7 +156,7 @@
     .hosptial-info-contents-img{
         width: 400px;
         height: 275px;
-        background-color: antiquewhite;
+        background-image: url('../../img/png/hospital/1-1.png');
         border-radius: 12px;
     }
 }
@@ -167,10 +167,38 @@
     .hosptial-info-contents-img{
         width: 320px;
         height: 180px;
-        background-color: antiquewhite;
+        background-image: url('../../img/png/hospital/1-2.png');
         border-radius: 12px;
         margin-bottom: 36px;
     }
+}
+
+    .hosptial-info-contents-img2{
+        width: 480px;
+        height: 284px;
+        background-image: url('../../img/png/hospital/2.png');
+        border-radius: 12px;
+    }
+    @media screen and (max-width: 1200px) {
+    
+        .hosptial-info-contents-img2{
+            width: 400px;
+            height: 275px;
+            background-image: url('../../img/png/hospital/2-1.png');
+            border-radius: 12px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 890px) {
+    
+        .hosptial-info-contents-img2{
+            width: 320px;
+            height: 180px;
+            background-image: url('../../img/png/hospital/2-2.png');
+            border-radius: 12px;
+            margin-bottom: 36px;
+        }
 
     .hosptial-info-contents-sns a span img{
         width: 48px;

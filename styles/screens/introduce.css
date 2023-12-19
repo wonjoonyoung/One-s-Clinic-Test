@@ -159,7 +159,7 @@
     width: 30vw;
     height: 30vw;
     border-radius: 16px;
-    background-image: url("../../img/png/intro/Frame\ 427319667.png");
+    background-image: url("../../img/png/intro/1.png");
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@
         width: 480px;
         height: 360px;
         border-radius: 16px;
-        background-image: url("../../img/png/intro/Frame\ 427319667.png");
+        background-image: url("../../img/png/intro/2.png");
         background-size: cover;
         margin-bottom: 28px;
     }
@@ -181,7 +181,7 @@
                 width: 320px;
                 height: 360px;
                 border-radius: 16px;
-                background-image: url("../../img/png/intro/Frame\ 427319667.png");
+                background-image: url("../../img/png/intro/3.png");
                 background-size: cover;
                 margin-bottom: 28px;
             }
