@@ -424,6 +424,22 @@
     }
 }
 
+
+.totalcare-aging-clinic-content-align ol{
+    list-style-type: decimal;
+    margin-left: 16px;
+    color: var(--gs-60, #98989A);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 12px;
+}
+
+.totalcare-aging-clinic-content-align li{
+    margin-top: 12px;
+}
+
+
 .totalcare-aging-clinic-content-align p span{
     font-weight: 700;
     line-height: 250%;
