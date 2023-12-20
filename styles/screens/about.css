@@ -741,7 +741,7 @@
 .about-space-content__tab1__items{
     position: absolute;
     left: -100%;
-    width: 500%;
+    width: 1100%;
     height: 100%; 
     display: flex;
     align-items: center;
@@ -1063,7 +1063,7 @@
 .about-space-content__tab2__items{
     position: absolute;
     left: -100%;
-    width: 500%;
+    width: 600%;
     height: 100%; 
     display: flex;
     align-items: center;
@@ -1277,4 +1277,6 @@
   .about-space_menu__btn.active {
     border-bottom: 2px solid #392613; /* 선택된 탭의 아래쪽에 2px 빨간색 선 추가 */
 }
+
+
 

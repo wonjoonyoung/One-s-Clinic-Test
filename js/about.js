@@ -53,7 +53,7 @@ const nextBtn = document.querySelector(".about-space-content__tab1__img__arrows_
 function translateContainer(direction){
   const selectedBtn = (direction === 1) ? 'prev' : 'next';
   container.style.transitionDuration = '500ms';
-  container.style.transform = `translateX(${direction * (100 / 5)}%)`;
+  container.style.transform = `translateX(${direction * (100 / 11)}%)`;
   container.ontransitionend = () => reorganizeEl(selectedBtn);
 }
 
@@ -80,7 +80,7 @@ const nextBtn2 = document.querySelector(".about-space-content__tab2__img__arrows
 function translateContainer2(direction2){
   const selectedBtn2 = (direction2 === 1) ? 'prev2' : 'next2';
   container2.style.transitionDuration = '500ms';
-  container2.style.transform = `translateX(${direction2 * (100 / 5)}%)`;
+  container2.style.transform = `translateX(${direction2 * (100 / 6)}%)`;
   container2.ontransitionend = () => reorganizeEl2(selectedBtn2);
 }
 
@@ -112,9 +112,6 @@ setInterval(() => {
   }
   
   moHeaderX.addEventListener("click", closemoheader);
-
-
-
 
 
 
