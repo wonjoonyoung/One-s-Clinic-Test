@@ -69,33 +69,39 @@ setInterval(() => {
 
 
 
-             
+            
+  const container2 = document.querySelector(".about-space-content__tab2__items");
+  const prevBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_up");
+  const nextBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_down");
+  const menuBtn = document.querySelector(".about-space_menu__btn");
   
-const container2 = document.querySelector(".about-space-content__tab2__items");
-const prevBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_up");
-const nextBtn2 = document.querySelector(".about-space-content__tab2__img__arrows_down"); 
-
-(function addEvent2(){
-  prevBtn2.addEventListener('click', translateContainer2.bind(this, 1));
-  nextBtn2.addEventListener('click', translateContainer2.bind(this, -1));
-})();
-
-function translateContainer2(direction2){
-  const selectedBtn2 = (direction2 === 1) ? 'prev2' : 'next2';
-  container2.style.transitionDuration = '1000ms';
-  container2.style.transform = `translateX(${direction2 * (100 / 6)}%)`;
-  container2.ontransitionend = () => reorganizeEl2(selectedBtn2);
-}
-
-function reorganizeEl2(selectedBtn2) {
-  container2.removeAttribute('style');
-  (selectedBtn2 === 'prev2') ? container2.insertBefore(container2.lastElementChild, container2.firstElementChild): container2.appendChild(container2.firstElementChild);
-}
-
-setInterval(() => {
-    nextBtn2.click();
-  }, 6000);
-
+  (function addEvent2() {
+    prevBtn2.addEventListener('click', translateContainer2.bind(this, 1));
+    nextBtn2.addEventListener('click', translateContainer2.bind(this, -1));
+    menuBtn.addEventListener('click', handleMenuBtnClick);
+  })();
+  
+  function translateContainer2(direction2) {
+    const selectedBtn2 = (direction2 === 1) ? 'prev2' : 'next2';
+    container2.style.transitionDuration = '1000ms';
+    container2.style.transform = `translateX(${direction2 * (100 / 6)}%)`;
+    container2.ontransitionend = () => reorganizeEl2(selectedBtn2);
+  }
+  
+  function reorganizeEl2(selectedBtn2) {
+    container2.removeAttribute('style');
+    (selectedBtn2 === 'prev2') ? container2.insertBefore(container2.lastElementChild, container2.firstElementChild) : container2.appendChild(container2.firstElementChild);
+  }
+  
+  function handleMenuBtnClick() {
+    // 클릭 시 실행할 동작 추가
+    console.log("Menu button clicked!");
+    // 예시: 6초마다 nextBtn2 클릭
+    setInterval(() => {
+      nextBtn2.click();
+    }, 6000);
+  }
+  
 
 
 
